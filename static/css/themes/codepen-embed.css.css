@@ -1,0 +1,9 @@
+[data-theme="codepen-embed.css"] {
+  --jtree-bg: #222;
+  --jtree-fg: #fff;
+  --jtree-attr: #000000;
+  --jtree-keyword: #8f9c6c;
+  --jtree-number: #ab875d;
+  --jtree-punctuation: #fff;
+  --jtree-string: #8f9c6c;
+}

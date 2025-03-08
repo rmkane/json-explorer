@@ -1,0 +1,9 @@
+[data-theme="arduino-light.css"] {
+  --jtree-bg: white;
+  --jtree-fg: #434f54;
+  --jtree-attr: #000000;
+  --jtree-keyword: #00979D;
+  --jtree-number: #8A7B52;
+  --jtree-punctuation: #434f54;
+  --jtree-string: #005C5F;
+}

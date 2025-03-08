@@ -1,0 +1,9 @@
+[data-theme="rose-pine.css"] {
+  --jtree-bg: #191724;
+  --jtree-fg: #6e6a86;
+  --jtree-attr: #c4a7e7;
+  --jtree-keyword: #c4a7e7;
+  --jtree-number: #ebbcba;
+  --jtree-punctuation: #6e6a86;
+  --jtree-string: #31748f;
+}

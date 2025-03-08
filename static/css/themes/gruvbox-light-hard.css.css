@@ -1,0 +1,9 @@
+[data-theme="gruvbox-light-hard.css"] {
+  --jtree-bg: #f9f5d7;
+  --jtree-fg: #504945;
+  --jtree-attr: #af3a03;
+  --jtree-keyword: #8f3f71;
+  --jtree-number: #af3a03;
+  --jtree-punctuation: #504945;
+  --jtree-string: #79740e;
+}

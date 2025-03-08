@@ -1,0 +1,9 @@
+[data-theme="solar-flare-light.css"] {
+  --jtree-bg: #F5F7FA;
+  --jtree-fg: #586875;
+  --jtree-attr: #E66B2B;
+  --jtree-keyword: #A363D5;
+  --jtree-number: #E66B2B;
+  --jtree-punctuation: #586875;
+  --jtree-string: #7CC844;
+}

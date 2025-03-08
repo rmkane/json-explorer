@@ -1,0 +1,9 @@
+[data-theme="atelier-estuary-light.css"] {
+  --jtree-bg: #f4f3ec;
+  --jtree-fg: #5f5e4e;
+  --jtree-attr: #ae7313;
+  --jtree-keyword: #5f9182;
+  --jtree-number: #ae7313;
+  --jtree-punctuation: #5f5e4e;
+  --jtree-string: #7d9726;
+}

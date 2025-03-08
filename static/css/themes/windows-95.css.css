@@ -1,0 +1,9 @@
+[data-theme="windows-95.css"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #a8a8a8;
+  --jtree-attr: #a85400;
+  --jtree-keyword: #fc54fc;
+  --jtree-number: #a85400;
+  --jtree-punctuation: #a8a8a8;
+  --jtree-string: #54fc54;
+}

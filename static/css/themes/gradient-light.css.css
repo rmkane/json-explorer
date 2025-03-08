@@ -1,0 +1,9 @@
+[data-theme="gradient-light.css"] {
+  --jtree-bg: #ffffff;
+  --jtree-fg: #250482;
+  --jtree-attr: #07BD5F;
+  --jtree-keyword: #7D2801;
+  --jtree-number: #7F0096;
+  --jtree-punctuation: #250482;
+  --jtree-string: #2681ab;
+}

@@ -1,0 +1,9 @@
+[data-theme="material.css"] {
+  --jtree-bg: #263238;
+  --jtree-fg: #EEFFFF;
+  --jtree-attr: #F78C6C;
+  --jtree-keyword: #C792EA;
+  --jtree-number: #F78C6C;
+  --jtree-punctuation: #EEFFFF;
+  --jtree-string: #C3E88D;
+}

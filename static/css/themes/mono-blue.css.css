@@ -1,0 +1,9 @@
+[data-theme="mono-blue.css"] {
+  --jtree-bg: #eaeef3;
+  --jtree-fg: #00193a;
+  --jtree-attr: #000000;
+  --jtree-keyword: #000000;
+  --jtree-number: #000000;
+  --jtree-punctuation: #00193a;
+  --jtree-string: #0048ab;
+}

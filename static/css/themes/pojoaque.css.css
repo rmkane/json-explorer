@@ -1,0 +1,9 @@
+[data-theme="pojoaque.css"] {
+  --jtree-bg: repeat;
+  --jtree-fg: #dccf8f;
+  --jtree-attr: #000000;
+  --jtree-keyword: #b64926;
+  --jtree-number: #468966;
+  --jtree-punctuation: #dccf8f;
+  --jtree-string: #468966;
+}

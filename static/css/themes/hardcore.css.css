@@ -1,0 +1,9 @@
+[data-theme="hardcore.css"] {
+  --jtree-bg: #212121;
+  --jtree-fg: #cdcdcd;
+  --jtree-attr: #fd971f;
+  --jtree-keyword: #9e6ffe;
+  --jtree-number: #fd971f;
+  --jtree-punctuation: #cdcdcd;
+  --jtree-string: #a6e22e;
+}

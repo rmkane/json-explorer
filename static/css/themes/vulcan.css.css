@@ -1,0 +1,9 @@
+[data-theme="vulcan.css"] {
+  --jtree-bg: #041523;
+  --jtree-fg: #5b778c;
+  --jtree-attr: #9198a3;
+  --jtree-keyword: #9198a3;
+  --jtree-number: #9198a3;
+  --jtree-punctuation: #5b778c;
+  --jtree-string: #977d7c;
+}

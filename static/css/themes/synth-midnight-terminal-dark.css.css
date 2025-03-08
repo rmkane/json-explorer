@@ -1,0 +1,9 @@
+[data-theme="synth-midnight-terminal-dark.css"] {
+  --jtree-bg: #050608;
+  --jtree-fg: #c1c3c4;
+  --jtree-attr: #ea770d;
+  --jtree-keyword: #ea5ce2;
+  --jtree-number: #ea770d;
+  --jtree-punctuation: #c1c3c4;
+  --jtree-string: #06ea61;
+}

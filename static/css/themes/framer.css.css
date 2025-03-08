@@ -1,0 +1,9 @@
+[data-theme="framer.css"] {
+  --jtree-bg: #181818;
+  --jtree-fg: #D0D0D0;
+  --jtree-attr: #FC4769;
+  --jtree-keyword: #BA8CFC;
+  --jtree-number: #FC4769;
+  --jtree-punctuation: #D0D0D0;
+  --jtree-string: #32CCDC;
+}

@@ -1,0 +1,9 @@
+[data-theme="bright.css"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #e0e0e0;
+  --jtree-attr: #fc6d24;
+  --jtree-keyword: #d381c3;
+  --jtree-number: #fc6d24;
+  --jtree-punctuation: #e0e0e0;
+  --jtree-string: #a1c659;
+}

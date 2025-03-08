@@ -1,0 +1,9 @@
+[data-theme="far.css"] {
+  --jtree-bg: #000080;
+  --jtree-fg: #0ff;
+  --jtree-attr: #000000;
+  --jtree-keyword: #fff;
+  --jtree-number: #0f0;
+  --jtree-punctuation: #0ff;
+  --jtree-string: #ff0;
+}

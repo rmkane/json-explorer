@@ -1,0 +1,9 @@
+[data-theme="nord.css"] {
+  --jtree-bg: #2E3440;
+  --jtree-fg: #000000;
+  --jtree-attr: #8FBCBB;
+  --jtree-keyword: #81A1C1;
+  --jtree-number: #B48EAD;
+  --jtree-punctuation: #000000;
+  --jtree-string: #A3BE8C;
+}

@@ -1,0 +1,9 @@
+[data-theme="eighties.css"] {
+  --jtree-bg: #2d2d2d;
+  --jtree-fg: #d3d0c8;
+  --jtree-attr: #f99157;
+  --jtree-keyword: #cc99cc;
+  --jtree-number: #f99157;
+  --jtree-punctuation: #d3d0c8;
+  --jtree-string: #99cc99;
+}

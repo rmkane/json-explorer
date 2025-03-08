@@ -1,0 +1,9 @@
+[data-theme="atelier-cave.css"] {
+  --jtree-bg: #19171c;
+  --jtree-fg: #8b8792;
+  --jtree-attr: #aa573c;
+  --jtree-keyword: #955ae7;
+  --jtree-number: #aa573c;
+  --jtree-punctuation: #8b8792;
+  --jtree-string: #2a9292;
+}

@@ -1,0 +1,9 @@
+[data-theme="embers.css"] {
+  --jtree-bg: #16130F;
+  --jtree-fg: #A39A90;
+  --jtree-attr: #828257;
+  --jtree-keyword: #82576D;
+  --jtree-number: #828257;
+  --jtree-punctuation: #A39A90;
+  --jtree-string: #57826D;
+}

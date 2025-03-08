@@ -1,0 +1,9 @@
+[data-theme="darcula.css"] {
+  --jtree-bg: #2b2b2b;
+  --jtree-fg: #a9b7c6;
+  --jtree-attr: #689757;
+  --jtree-keyword: #cc7832;
+  --jtree-number: #689757;
+  --jtree-punctuation: #a9b7c6;
+  --jtree-string: #6a8759;
+}

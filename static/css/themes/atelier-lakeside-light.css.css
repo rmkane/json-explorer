@@ -1,0 +1,9 @@
+[data-theme="atelier-lakeside-light.css"] {
+  --jtree-bg: #ebf8ff;
+  --jtree-fg: #516d7b;
+  --jtree-attr: #935c25;
+  --jtree-keyword: #6b6bb8;
+  --jtree-number: #935c25;
+  --jtree-punctuation: #516d7b;
+  --jtree-string: #568c3b;
+}

@@ -1,0 +1,9 @@
+[data-theme="humanoid-light.css"] {
+  --jtree-bg: #f8f8f2;
+  --jtree-fg: #232629;
+  --jtree-attr: #ff3d00;
+  --jtree-keyword: #700f98;
+  --jtree-number: #ff3d00;
+  --jtree-punctuation: #232629;
+  --jtree-string: #388e3c;
+}

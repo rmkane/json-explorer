@@ -1,0 +1,9 @@
+[data-theme="solarized-dark.css"] {
+  --jtree-bg: #002b36;
+  --jtree-fg: #93a1a1;
+  --jtree-attr: #cb4b16;
+  --jtree-keyword: #6c71c4;
+  --jtree-number: #cb4b16;
+  --jtree-punctuation: #93a1a1;
+  --jtree-string: #859900;
+}

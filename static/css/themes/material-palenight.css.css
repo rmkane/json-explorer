@@ -1,0 +1,9 @@
+[data-theme="material-palenight.css"] {
+  --jtree-bg: #292D3E;
+  --jtree-fg: #959DCB;
+  --jtree-attr: #F78C6C;
+  --jtree-keyword: #C792EA;
+  --jtree-number: #F78C6C;
+  --jtree-punctuation: #959DCB;
+  --jtree-string: #C3E88D;
+}

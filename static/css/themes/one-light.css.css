@@ -1,0 +1,9 @@
+[data-theme="one-light.css"] {
+  --jtree-bg: #fafafa;
+  --jtree-fg: #383a42;
+  --jtree-attr: #d75f00;
+  --jtree-keyword: #a626a4;
+  --jtree-number: #d75f00;
+  --jtree-punctuation: #383a42;
+  --jtree-string: #50a14f;
+}

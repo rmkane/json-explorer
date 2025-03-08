@@ -1,0 +1,9 @@
+[data-theme="spacemacs.css"] {
+  --jtree-bg: #1f2022;
+  --jtree-fg: #a3a3a3;
+  --jtree-attr: #ffa500;
+  --jtree-keyword: #a31db1;
+  --jtree-number: #ffa500;
+  --jtree-punctuation: #a3a3a3;
+  --jtree-string: #67b11d;
+}

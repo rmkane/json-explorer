@@ -1,0 +1,9 @@
+[data-theme="stackoverflow-dark.css"] {
+  --jtree-bg: #1c1b1b;
+  --jtree-fg: #ffffff;
+  --jtree-attr: #88aece;
+  --jtree-keyword: #88aece;
+  --jtree-number: #f08d49;
+  --jtree-punctuation: #ffffff;
+  --jtree-string: #b5bd68;
+}

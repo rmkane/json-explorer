@@ -1,0 +1,9 @@
+[data-theme="atelier-plateau.css"] {
+  --jtree-bg: #1b1818;
+  --jtree-fg: #8a8585;
+  --jtree-attr: #b45a3c;
+  --jtree-keyword: #8464c4;
+  --jtree-number: #b45a3c;
+  --jtree-punctuation: #8a8585;
+  --jtree-string: #4b8b8b;
+}

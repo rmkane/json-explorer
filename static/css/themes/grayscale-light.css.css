@@ -1,0 +1,9 @@
+[data-theme="grayscale-light.css"] {
+  --jtree-bg: #f7f7f7;
+  --jtree-fg: #464646;
+  --jtree-attr: #999999;
+  --jtree-keyword: #747474;
+  --jtree-number: #999999;
+  --jtree-punctuation: #464646;
+  --jtree-string: #8e8e8e;
+}

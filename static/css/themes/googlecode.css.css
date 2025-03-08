@@ -1,0 +1,9 @@
+[data-theme="googlecode.css"] {
+  --jtree-bg: white;
+  --jtree-fg: black;
+  --jtree-attr: #606;
+  --jtree-keyword: #008;
+  --jtree-number: #066;
+  --jtree-punctuation: black;
+  --jtree-string: #080;
+}

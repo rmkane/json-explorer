@@ -1,0 +1,9 @@
+[data-theme="pop.css"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #d0d0d0;
+  --jtree-attr: #f29333;
+  --jtree-keyword: #b31e8d;
+  --jtree-number: #f29333;
+  --jtree-punctuation: #d0d0d0;
+  --jtree-string: #37b349;
+}

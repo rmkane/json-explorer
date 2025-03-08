@@ -1,0 +1,9 @@
+[data-theme="snazzy.css"] {
+  --jtree-bg: #282a36;
+  --jtree-fg: #e2e4e5;
+  --jtree-attr: #ff9f43;
+  --jtree-keyword: #ff6ac1;
+  --jtree-number: #ff9f43;
+  --jtree-punctuation: #e2e4e5;
+  --jtree-string: #5af78e;
+}

@@ -1,0 +1,9 @@
+[data-theme="green-screen.css"] {
+  --jtree-bg: #001100;
+  --jtree-fg: #00bb00;
+  --jtree-attr: #009900;
+  --jtree-keyword: #00bb00;
+  --jtree-number: #009900;
+  --jtree-punctuation: #00bb00;
+  --jtree-string: #00bb00;
+}

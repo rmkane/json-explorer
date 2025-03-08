@@ -1,0 +1,9 @@
+[data-theme="phd.css"] {
+  --jtree-bg: #061229;
+  --jtree-fg: #b8bbc2;
+  --jtree-attr: #f0a000;
+  --jtree-keyword: #9989cc;
+  --jtree-number: #f0a000;
+  --jtree-punctuation: #b8bbc2;
+  --jtree-string: #99bf52;
+}

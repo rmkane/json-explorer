@@ -1,0 +1,9 @@
+[data-theme="outrun-dark.css"] {
+  --jtree-bg: #00002A;
+  --jtree-fg: #D0D0FA;
+  --jtree-attr: #FC8D28;
+  --jtree-keyword: #F10596;
+  --jtree-number: #FC8D28;
+  --jtree-punctuation: #D0D0FA;
+  --jtree-string: #59F176;
+}

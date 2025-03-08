@@ -1,0 +1,9 @@
+[data-theme="obsidian"] {
+  --jtree-bg: #282b2e;
+  --jtree-fg: #e0e2e4;
+  --jtree-attr: #000000;
+  --jtree-keyword: #93c763;
+  --jtree-number: #ffcd22;
+  --jtree-punctuation: #e0e2e4;
+  --jtree-string: #ec7600;
+}

@@ -1,0 +1,9 @@
+[data-theme="macintosh.css"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c0c0c0;
+  --jtree-attr: #ff6403;
+  --jtree-keyword: #4700a5;
+  --jtree-number: #ff6403;
+  --jtree-punctuation: #c0c0c0;
+  --jtree-string: #1fb714;
+}

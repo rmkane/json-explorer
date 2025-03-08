@@ -1,0 +1,9 @@
+[data-theme="tomorrow-night.css"] {
+  --jtree-bg: #2d2d2d;
+  --jtree-fg: #cccccc;
+  --jtree-attr: #f99157;
+  --jtree-keyword: #cc99cc;
+  --jtree-number: #f99157;
+  --jtree-punctuation: #cccccc;
+  --jtree-string: #99cc99;
+}

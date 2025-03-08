@@ -1,0 +1,9 @@
+[data-theme="brush-trees.css"] {
+  --jtree-bg: #E3EFEF;
+  --jtree-fg: #6D828E;
+  --jtree-attr: #d8bba2;
+  --jtree-keyword: #b386b2;
+  --jtree-number: #d8bba2;
+  --jtree-punctuation: #6D828E;
+  --jtree-string: #87b386;
+}

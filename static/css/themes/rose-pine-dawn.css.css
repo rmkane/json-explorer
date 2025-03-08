@@ -1,0 +1,9 @@
+[data-theme="rose-pine-dawn.css"] {
+  --jtree-bg: #faf4ed;
+  --jtree-fg: #575279;
+  --jtree-attr: #907aa9;
+  --jtree-keyword: #907aa9;
+  --jtree-number: #d7827e;
+  --jtree-punctuation: #575279;
+  --jtree-string: #286983;
+}

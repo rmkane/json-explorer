@@ -1,0 +1,9 @@
+[data-theme="ocean.css"] {
+  --jtree-bg: #2b303b;
+  --jtree-fg: #c0c5ce;
+  --jtree-attr: #d08770;
+  --jtree-keyword: #b48ead;
+  --jtree-number: #d08770;
+  --jtree-punctuation: #c0c5ce;
+  --jtree-string: #a3be8c;
+}

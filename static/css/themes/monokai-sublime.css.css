@@ -1,0 +1,9 @@
+[data-theme="monokai-sublime.css"] {
+  --jtree-bg: #23241f;
+  --jtree-fg: #f8f8f2;
+  --jtree-attr: #f92672;
+  --jtree-keyword: #f92672;
+  --jtree-number: #ae81ff;
+  --jtree-punctuation: #f8f8f2;
+  --jtree-string: #e6db74;
+}

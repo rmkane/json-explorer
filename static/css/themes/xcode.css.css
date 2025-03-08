@@ -1,0 +1,9 @@
+[data-theme="xcode.css"] {
+  --jtree-bg: #fff;
+  --jtree-fg: black;
+  --jtree-attr: #836C28;
+  --jtree-keyword: #aa0d91;
+  --jtree-number: #1c00cf;
+  --jtree-punctuation: black;
+  --jtree-string: #c41a16;
+}

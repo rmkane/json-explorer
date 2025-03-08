@@ -1,0 +1,9 @@
+[data-theme="porple.css"] {
+  --jtree-bg: #292c36;
+  --jtree-fg: #d8d8d8;
+  --jtree-attr: #d28e5d;
+  --jtree-keyword: #b74989;
+  --jtree-number: #d28e5d;
+  --jtree-punctuation: #d8d8d8;
+  --jtree-string: #95c76f;
+}

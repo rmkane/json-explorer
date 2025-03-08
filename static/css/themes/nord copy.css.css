@@ -1,0 +1,9 @@
+[data-theme="nord copy.css"] {
+  --jtree-bg: #2E3440;
+  --jtree-fg: #E5E9F0;
+  --jtree-attr: #D08770;
+  --jtree-keyword: #B48EAD;
+  --jtree-number: #D08770;
+  --jtree-punctuation: #E5E9F0;
+  --jtree-string: #A3BE8C;
+}

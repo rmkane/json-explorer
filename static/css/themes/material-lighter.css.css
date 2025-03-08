@@ -1,0 +1,9 @@
+[data-theme="material-lighter.css"] {
+  --jtree-bg: #FAFAFA;
+  --jtree-fg: #80CBC4;
+  --jtree-attr: #F76D47;
+  --jtree-keyword: #7C4DFF;
+  --jtree-number: #F76D47;
+  --jtree-punctuation: #80CBC4;
+  --jtree-string: #91B859;
+}

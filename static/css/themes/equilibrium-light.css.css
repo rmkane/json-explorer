@@ -1,0 +1,9 @@
+[data-theme="equilibrium-light.css"] {
+  --jtree-bg: #f5f0e7;
+  --jtree-fg: #43474e;
+  --jtree-attr: #bf3e05;
+  --jtree-keyword: #4e66b6;
+  --jtree-number: #bf3e05;
+  --jtree-punctuation: #43474e;
+  --jtree-string: #637200;
+}

@@ -1,0 +1,9 @@
+[data-theme="ros-pine-dawn.css"] {
+  --jtree-bg: #faf4ed;
+  --jtree-fg: #575279;
+  --jtree-attr: #b4637a;
+  --jtree-keyword: #907aa9;
+  --jtree-number: #b4637a;
+  --jtree-punctuation: #575279;
+  --jtree-string: #d7827e;
+}

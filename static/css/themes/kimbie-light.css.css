@@ -1,0 +1,9 @@
+[data-theme="kimbie-light.css"] {
+  --jtree-bg: #fbebd4;
+  --jtree-fg: #84613d;
+  --jtree-attr: #000000;
+  --jtree-keyword: #98676a;
+  --jtree-number: #f79a32;
+  --jtree-punctuation: #84613d;
+  --jtree-string: #889b4a;
+}

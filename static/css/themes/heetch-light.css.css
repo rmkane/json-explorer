@@ -1,0 +1,9 @@
+[data-theme="heetch-light.css"] {
+  --jtree-bg: #feffff;
+  --jtree-fg: #5a496e;
+  --jtree-attr: #bdb6c5;
+  --jtree-keyword: #bd0152;
+  --jtree-number: #bdb6c5;
+  --jtree-punctuation: #5a496e;
+  --jtree-string: #f80059;
+}

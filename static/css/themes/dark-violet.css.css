@@ -1,0 +1,9 @@
+[data-theme="dark-violet.css"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #b08ae6;
+  --jtree-attr: #bb66cc;
+  --jtree-keyword: #7e5ce6;
+  --jtree-number: #bb66cc;
+  --jtree-punctuation: #b08ae6;
+  --jtree-string: #4595e6;
+}

@@ -1,0 +1,9 @@
+[data-theme="tomorrow-night-bright.css"] {
+  --jtree-bg: black;
+  --jtree-fg: #eaeaea;
+  --jtree-attr: #000000;
+  --jtree-keyword: #c397d8;
+  --jtree-number: #e78c45;
+  --jtree-punctuation: #eaeaea;
+  --jtree-string: #b9ca4a;
+}

@@ -1,0 +1,9 @@
+[data-theme="silk-light.css"] {
+  --jtree-bg: #E9F1EF;
+  --jtree-fg: #385156;
+  --jtree-attr: #D27F46;
+  --jtree-keyword: #6E6582;
+  --jtree-number: #D27F46;
+  --jtree-punctuation: #385156;
+  --jtree-string: #6CA38C;
+}

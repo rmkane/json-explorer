@@ -1,3 +1,6 @@
+@import "reset.css";
+@import "jsonTree.css";
+
 :root {
   --menu-bg: #444;
   --menu-border: #666;
@@ -15,7 +18,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%:
+  min-height: 100%;
 }
 
 .jsontree_wrapper {
@@ -70,7 +73,8 @@ body {
   flex: 1;
   padding: 1rem;
   color: var(--source-color);
-  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
+    Menlo, Monaco, Consolas, monospace;
   font-size: 0.8rem;
 }
 

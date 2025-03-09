@@ -25,7 +25,17 @@ const contentConfig = {
   format: "iife",
 };
 
-const buildOptions = [jsonTreeConfig, contentConfig];
+// Build the content CSS file
+const contentCssConfig = {
+  entryPoints: ["./src/css/content.css"],
+  bundle: true,
+  //minify: true,
+  //sourcemap: true,
+  outfile: "./dist/content.css",
+  loader: { ".svg": "dataurl" },
+};
+
+const buildOptions = [jsonTreeConfig, contentConfig, contentCssConfig];
 
 if (process.argv.includes("--watch")) {
   watchAll();

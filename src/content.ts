@@ -17,14 +17,16 @@ const viewStates: Record<View, string> = {
 let rawData: string;
 let tree: Tree;
 
-document.addEventListener("DOMContentLoaded", init);
+init();
 
 function getPreviewElement(): HTMLElement | null {
   return document.querySelector(".jsontree_view[data-view='preview']");
 }
 
 function init(): void {
+  console.log("Initializing JSONTree...");
   const data = parseJSON();
+  console.log("Parsed data:", data);
   if (!data) {
     return;
   }

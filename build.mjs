@@ -24,7 +24,7 @@ const jsonTreeConfig = {
   entryPoints: ["./src/jsonTree.ts"],
   bundle: true,
   //sourcemap: true,
-  outfile: "./dist/jsonTree.js",
+  outfile: "./dist/js/jsonTree.js",
   platform: "browser",
   format: "iife",
   globalName: "jsonTree",
@@ -39,7 +39,7 @@ const contentConfig = {
   bundle: true,
   //minify: true,
   //sourcemap: true,
-  outfile: "./dist/content.js",
+  outfile: "./dist/js/content.js",
   platform: "browser",
   format: "iife",
 };
@@ -49,7 +49,7 @@ const backgroundConfig = {
   bundle: true,
   //minify: true,
   //sourcemap: true,
-  outfile: "./dist/background.js",
+  outfile: "./dist/js/background.js",
   platform: "browser",
   format: "iife",
 };
@@ -59,7 +59,7 @@ const popupConfig = {
   bundle: true,
   //minify: true,
   //sourcemap: true,
-  outfile: "./dist/popup.js",
+  outfile: "./dist/js/popup.js",
   platform: "browser",
   format: "iife",
 };
@@ -70,8 +70,16 @@ const contentCssConfig = {
   bundle: true,
   //minify: true,
   //sourcemap: true,
-  outfile: "./dist/content.css",
+  outfile: "./dist/css/content.css",
   loader: { ".svg": "dataurl" },
+};
+
+const popupCssConfig = {
+  entryPoints: ["./src/css/popup.css"],
+  bundle: true,
+  //minify: true,
+  //sourcemap: true,
+  outfile: "./dist/css/popup.css",
 };
 
 buildAndWatch([
@@ -80,6 +88,7 @@ buildAndWatch([
   contentConfig,
   popupConfig,
   contentCssConfig,
+  popupCssConfig,
 ]);
 
 async function buildAndWatch(buildOptions) {

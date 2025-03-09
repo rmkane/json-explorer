@@ -11,12 +11,12 @@ const distDir = resolvePath("dist");
 const distIconsDir = resolvePath(distDir, "icons");
 
 const files = [
-  { file: "manifest.json", dir: distDir },
   { file: "assets/icons/icon16.png", dir: distIconsDir },
   { file: "assets/icons/icon32.png", dir: distIconsDir },
   { file: "assets/icons/icon48.png", dir: distIconsDir },
   { file: "assets/icons/icon128.png", dir: distIconsDir },
-  { file: "static/popup.html", dir: distIconsDir },
+  { file: "static/popup.html", dir: distDir },
+  { file: "manifest.json", dir: distDir },
 ];
 
 // Build the jsonTree library as a browser-compatible script

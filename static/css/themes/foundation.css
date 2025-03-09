@@ -1,0 +1,10 @@
+[data-theme="foundation"] {
+  --jtree-bg: #eee;
+  --jtree-fg: black;
+  --jtree-attr: #000000;
+  --jtree-keyword: #099;
+  --jtree-number: #099;
+  --jtree-punctuation: black;
+  --jtree-string: #d14;
+  --jtree-highlight: #900;
+}

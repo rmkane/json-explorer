@@ -1,0 +1,10 @@
+[data-theme="tomorrow"] {
+  --jtree-bg: #ffffff;
+  --jtree-fg: #4d4d4c;
+  --jtree-attr: #f5871f;
+  --jtree-keyword: #8959a8;
+  --jtree-number: #f5871f;
+  --jtree-punctuation: #4d4d4c;
+  --jtree-string: #718c00;
+  --jtree-highlight: #eab700;
+}

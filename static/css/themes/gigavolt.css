@@ -1,0 +1,10 @@
+[data-theme="gigavolt"] {
+  --jtree-bg: #202126;
+  --jtree-fg: #e9e7e1;
+  --jtree-attr: #19f988;
+  --jtree-keyword: #ae94f9;
+  --jtree-number: #19f988;
+  --jtree-punctuation: #e9e7e1;
+  --jtree-string: #f2e6a9;
+  --jtree-highlight: #ffdc2d;
+}

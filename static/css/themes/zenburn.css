@@ -1,0 +1,10 @@
+[data-theme="zenburn"] {
+  --jtree-bg: #383838;
+  --jtree-fg: #dcdccc;
+  --jtree-attr: #dfaf8f;
+  --jtree-keyword: #dc8cc3;
+  --jtree-number: #dfaf8f;
+  --jtree-punctuation: #dcdccc;
+  --jtree-string: #5f7f5f;
+  --jtree-highlight: #e0cf9f;
+}

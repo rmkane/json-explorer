@@ -6,6 +6,7 @@
   --jtree-number: #005cc5;
   --jtree-punctuation: #24292e;
   --jtree-string: #032f62;
+  --jtree-highlight: #fff2aa;
 }
 
 /* Background for the tree. May use for <body> element */
@@ -19,6 +20,7 @@
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
     Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 .jsontree_symbol {
@@ -29,8 +31,6 @@
 .jsontree_child-nodes {
   display: none;
   margin-left: 1rem;
-  margin-bottom: 0.25rem;
-  line-height: 1.25rem;
 }
 .jsontree_node_expanded
   > .jsontree_value-wrapper
@@ -54,7 +54,7 @@
   cursor: default;
 }
 .jsontree_node_marked > .jsontree_label-wrapper > .jsontree_label {
-  background: #fff2aa;
+  background: var(--jtree-highlight);
 }
 
 /* Styles for values */
@@ -89,7 +89,7 @@
 /* Styles for active elements */
 .jsontree_expand-button {
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: -15px;
   display: block;
   width: 11px;

@@ -1,0 +1,10 @@
+[data-theme="vs2015"] {
+  --jtree-bg: #1E1E1E;
+  --jtree-fg: #DCDCDC;
+  --jtree-attr: #9CDCFE;
+  --jtree-keyword: #569CD6;
+  --jtree-number: #B8D7A3;
+  --jtree-punctuation: #DCDCDC;
+  --jtree-string: #D69D85;
+  --jtree-highlight: #DCDCDC;
+}

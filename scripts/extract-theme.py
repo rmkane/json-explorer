@@ -22,6 +22,7 @@ VAR_PUNCTUATION = f"--{PREFIX}punctuation"
 VAR_NUMBER = f"--{PREFIX}number"
 VAR_STRING = f"--{PREFIX}string"
 VAR_KEYWORD = f"--{PREFIX}keyword"
+VAR_HIGHLIGHT = f"--{PREFIX}highlight"
 
 # Define the CSS classes and corresponding CSS variables
 MAPPINGS = {
@@ -30,6 +31,7 @@ MAPPINGS = {
     "hljs-number": VAR_NUMBER,
     "hljs-string": VAR_STRING,
     "hljs-keyword": VAR_KEYWORD,
+    "hljs-title": VAR_HIGHLIGHT,
 }
 
 # List of non-color CSS values to ignore
@@ -46,6 +48,7 @@ def init_dict():
             (VAR_NUMBER, "#000000"),
             (VAR_PUNCTUATION, "#000000"),
             (VAR_STRING, "#000000"),
+            (VAR_HIGHLIGHT, "#ffffaa"),
         ]
     )
 

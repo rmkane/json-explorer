@@ -1,0 +1,10 @@
+[data-theme="summerfruit-light"] {
+  --jtree-bg: #FFFFFF;
+  --jtree-fg: #101010;
+  --jtree-attr: #FD8900;
+  --jtree-keyword: #AD00A1;
+  --jtree-number: #FD8900;
+  --jtree-punctuation: #101010;
+  --jtree-string: #00C918;
+  --jtree-highlight: #ABA800;
+}

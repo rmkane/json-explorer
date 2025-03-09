@@ -1,0 +1,10 @@
+[data-theme="nnfx-dark"] {
+  --jtree-bg: #333;
+  --jtree-fg: #fff;
+  --jtree-attr: #fff;
+  --jtree-keyword: #a7a;
+  --jtree-number: #bce;
+  --jtree-punctuation: #fff;
+  --jtree-string: #bce;
+  --jtree-highlight: #d40;
+}

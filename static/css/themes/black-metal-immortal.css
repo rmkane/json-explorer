@@ -1,0 +1,10 @@
+[data-theme="black-metal-immortal"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c1c1c1;
+  --jtree-attr: #aaaaaa;
+  --jtree-keyword: #999999;
+  --jtree-number: #aaaaaa;
+  --jtree-punctuation: #c1c1c1;
+  --jtree-string: #7799bb;
+  --jtree-highlight: #556677;
+}

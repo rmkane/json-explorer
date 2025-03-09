@@ -1,0 +1,10 @@
+[data-theme="windows-nt"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c0c0c0;
+  --jtree-attr: #808000;
+  --jtree-keyword: #ff00ff;
+  --jtree-number: #808000;
+  --jtree-punctuation: #c0c0c0;
+  --jtree-string: #00ff00;
+  --jtree-highlight: #ffff00;
+}

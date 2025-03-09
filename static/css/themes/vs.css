@@ -1,0 +1,10 @@
+[data-theme="vs"] {
+  --jtree-bg: white;
+  --jtree-fg: black;
+  --jtree-attr: #f00;
+  --jtree-keyword: #00f;
+  --jtree-number: #000000;
+  --jtree-punctuation: black;
+  --jtree-string: #a31515;
+  --jtree-highlight: #a31515;
+}

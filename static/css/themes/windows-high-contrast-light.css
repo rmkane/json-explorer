@@ -1,0 +1,10 @@
+[data-theme="windows-high-contrast-light"] {
+  --jtree-bg: #fcfcfc;
+  --jtree-fg: #545454;
+  --jtree-attr: #fcfc54;
+  --jtree-keyword: #800080;
+  --jtree-number: #fcfc54;
+  --jtree-punctuation: #545454;
+  --jtree-string: #008000;
+  --jtree-highlight: #808000;
+}

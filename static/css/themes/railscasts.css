@@ -1,0 +1,10 @@
+[data-theme="railscasts"] {
+  --jtree-bg: #2b2b2b;
+  --jtree-fg: #e6e1dc;
+  --jtree-attr: #cc7833;
+  --jtree-keyword: #b6b3eb;
+  --jtree-number: #cc7833;
+  --jtree-punctuation: #e6e1dc;
+  --jtree-string: #a5c261;
+  --jtree-highlight: #ffc66d;
+}

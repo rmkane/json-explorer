@@ -1,0 +1,10 @@
+[data-theme="docco"] {
+  --jtree-bg: #f8f8ff;
+  --jtree-fg: #000;
+  --jtree-attr: #000000;
+  --jtree-keyword: #954121;
+  --jtree-number: #40a070;
+  --jtree-punctuation: #000;
+  --jtree-string: #219161;
+  --jtree-highlight: #458;
+}

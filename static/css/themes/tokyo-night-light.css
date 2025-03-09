@@ -1,0 +1,10 @@
+[data-theme="tokyo-night-light"] {
+  --jtree-bg: #d5d6db;
+  --jtree-fg: #565a6e;
+  --jtree-attr: #5a4a78;
+  --jtree-keyword: #5a4a78;
+  --jtree-number: #965027;
+  --jtree-punctuation: #565a6e;
+  --jtree-string: #485e30;
+  --jtree-highlight: #0f4b6e;
+}

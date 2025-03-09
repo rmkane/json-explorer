@@ -1,0 +1,10 @@
+[data-theme="kimber"] {
+  --jtree-bg: #222222;
+  --jtree-fg: #DEDEE7;
+  --jtree-attr: #476C88;
+  --jtree-keyword: #86CACD;
+  --jtree-number: #476C88;
+  --jtree-punctuation: #DEDEE7;
+  --jtree-string: #99C899;
+  --jtree-highlight: #D8B56D;
+}

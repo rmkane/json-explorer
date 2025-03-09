@@ -1,0 +1,10 @@
+[data-theme="pasque"] {
+  --jtree-bg: #271C3A;
+  --jtree-fg: #DEDCDF;
+  --jtree-attr: #918889;
+  --jtree-keyword: #953B9D;
+  --jtree-number: #918889;
+  --jtree-punctuation: #DEDCDF;
+  --jtree-string: #C6914B;
+  --jtree-highlight: #804ead;
+}

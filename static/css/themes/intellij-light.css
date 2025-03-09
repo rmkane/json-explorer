@@ -1,0 +1,10 @@
+[data-theme="intellij-light"] {
+  --jtree-bg: #fff;
+  --jtree-fg: #000;
+  --jtree-attr: #871094;
+  --jtree-keyword: #0033B3;
+  --jtree-number: #1750EB;
+  --jtree-punctuation: #000;
+  --jtree-string: #067D17;
+  --jtree-highlight: #000;
+}

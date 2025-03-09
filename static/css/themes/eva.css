@@ -1,0 +1,10 @@
+[data-theme="eva"] {
+  --jtree-bg: #2a3b4d;
+  --jtree-fg: #9fa2a6;
+  --jtree-attr: #ff9966;
+  --jtree-keyword: #9c6cd3;
+  --jtree-number: #ff9966;
+  --jtree-punctuation: #9fa2a6;
+  --jtree-string: #66ff66;
+  --jtree-highlight: #ffff66;
+}

@@ -1,0 +1,10 @@
+[data-theme="brown-paper"] {
+  --jtree-bg: #b7a68e;
+  --jtree-fg: #363c69;
+  --jtree-attr: #000000;
+  --jtree-keyword: #005599;
+  --jtree-number: #000000;
+  --jtree-punctuation: #363c69;
+  --jtree-string: #2c009f;
+  --jtree-highlight: #2c009f;
+}

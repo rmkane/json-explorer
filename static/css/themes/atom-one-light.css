@@ -1,0 +1,10 @@
+[data-theme="atom-one-light"] {
+  --jtree-bg: #fafafa;
+  --jtree-fg: #383a42;
+  --jtree-attr: #986801;
+  --jtree-keyword: #a626a4;
+  --jtree-number: #986801;
+  --jtree-punctuation: #383a42;
+  --jtree-string: #50a14f;
+  --jtree-highlight: #4078f2;
+}

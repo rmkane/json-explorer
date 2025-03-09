@@ -1,0 +1,10 @@
+[data-theme="mellow-purple"] {
+  --jtree-bg: #1e0528;
+  --jtree-fg: #ffeeff;
+  --jtree-attr: #aa00a3;
+  --jtree-keyword: #8991bb;
+  --jtree-number: #aa00a3;
+  --jtree-punctuation: #ffeeff;
+  --jtree-string: #05cb0d;
+  --jtree-highlight: #955ae7;
+}

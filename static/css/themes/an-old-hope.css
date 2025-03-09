@@ -1,0 +1,10 @@
+[data-theme="an-old-hope"] {
+  --jtree-bg: #1C1D21;
+  --jtree-fg: #c0c5ce;
+  --jtree-attr: #000000;
+  --jtree-keyword: #B45EA4;
+  --jtree-number: #E7CE56;
+  --jtree-punctuation: #c0c5ce;
+  --jtree-string: #4FB4D7;
+  --jtree-highlight: #78BB65;
+}

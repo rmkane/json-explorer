@@ -18,7 +18,7 @@ THEME_DIR="$ROOT_DIR/static/css/themes"
 mkdir -p "$THEME_DIR"
 
 for css_file in "$CSS_DIR"/*.css; do
-    theme_name=$(basename "$css_file")
+    theme_name=$(basename "$css_file" .css)
     theme_file="$THEME_DIR/$theme_name.css"
 
     if [[ -f "$css_file" ]]; then

@@ -17,6 +17,7 @@ import type {
   TreeNode,
 } from "./types";
 
+// Abstract class for simple nodes
 class NodeSimple implements TreeNode {
   type: NodeType;
   label: string;
@@ -59,18 +60,16 @@ class NodeSimple implements TreeNode {
   }
 
   template(label: string, val: JSONValue, isLast: boolean) {
+    const comma = !isLast ? `<span class="jsontree_symbol">,</span>` : "";
     return `
-        <span class="jsontree_label-wrapper">
-          <span class="jsontree_label">"${label}"</span>
-          <span class="jsontree_symbol">:</span>
-        </span>
-        <span class="jsontree_value-wrapper">
-          <span class="jsontree_value jsontree_value_${
-            this.type
-          }">${val}</span>${
-      !isLast ? '<span class="jsontree_symbol">,</span>' : ""
-    }
-        </span>`;
+      <span class="jsontree_label-wrapper">
+        <span class="jsontree_label">"${label}"</span>
+        <span class="jsontree_symbol">:</span>
+      </span>
+      <span class="jsontree_value-wrapper">
+        <span class="jsontree_value jsontree_value_${this.type}">
+        ${val}</span>${comma}
+      </span>`;
   }
 
   mark() {
@@ -113,6 +112,7 @@ class NodeSimple implements TreeNode {
   }
 }
 
+// Subclasses for different node types
 class NodeBoolean extends NodeSimple {
   constructor(label: string, val: boolean, isLast: boolean) {
     super(TypeBoolean, label, val, isLast);
@@ -137,6 +137,7 @@ class NodeNull extends NodeSimple {
   }
 }
 
+// Class for complex nodes (objects and arrays)
 class NodeComplex extends NodeSimple {
   sym: [string, string];
   childNodes: TreeNode[];
@@ -216,23 +217,23 @@ class NodeComplex extends NodeSimple {
   template(label: string | null, sym: [string, string], isLast: boolean) {
     const comma = !isLast ? `<span class="jsontree_symbol">,</span>` : "";
     let str = `
-        <div class="jsontree_value-wrapper">
-          <div class="jsontree_value jsontree_value_${this.type}">
-            <span class="jsontree_symbol">${sym[0]}</span>
-            <span class="jsontree_show-more">&hellip;</span>
-            <ul class="jsontree_child-nodes"></ul>
-            <span class="jsontree_symbol">${sym[1]}</span>
-          </div>${comma}
-        </div>`;
+      <div class="jsontree_value-wrapper">
+        <div class="jsontree_value jsontree_value_${this.type}">
+          <span class="jsontree_symbol">${sym[0]}</span>
+          <span class="jsontree_show-more">&hellip;</span>
+          <ul class="jsontree_child-nodes"></ul>
+          <span class="jsontree_symbol">${sym[1]}</span>${comma}
+        </div>
+      </div>`;
     if (label !== null) {
       str = `
-          <span class="jsontree_label-wrapper">
-            <span class="jsontree_label">
-              <span class="jsontree_expand-button"></span>
-              "${label}"
-            </span>
-            <span class="jsontree_symbol">:</span>
-          </span>${str}`;
+        <span class="jsontree_label-wrapper">
+          <span class="jsontree_label">
+            <span class="jsontree_expand-button"></span>
+            "${label}"
+          </span>
+          <span class="jsontree_symbol">:</span>
+        </span>${str}`;
     }
     return str;
   }
@@ -318,6 +319,7 @@ class NodeComplex extends NodeSimple {
   }
 }
 
+// Subclasses for complex nodes (objects and arrays)
 class NodeObject extends NodeComplex {
   constructor(label: string, val: JSONObject, isLast: boolean) {
     super(TypeObject, label, val, isLast, ["{", "}"]);
@@ -330,6 +332,7 @@ class NodeArray extends NodeComplex {
   }
 }
 
+// Utility functions
 function getClass(val: JSONValue): string {
   return Object.prototype.toString.call(val);
 }

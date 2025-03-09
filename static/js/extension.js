@@ -1,4 +1,4 @@
-const activeTheme = "monokai";
+const activeTheme = "unikitty-dark";
 
 let rawData, tree;
 
@@ -10,6 +10,13 @@ function init() {
     return;
   }
   render(data);
+
+  const isStringNode = (node) => node.type === "string";
+
+  tree.findAndHandle(isStringNode, function (node) {
+    node.mark();
+    node.expandParent("isRecursive");
+  });
 }
 
 function createEl(tag, { class: className, text, handlers, parent }) {
@@ -44,18 +51,21 @@ function render(data, target = document.body) {
   const menu = createEl("div", { class: "jsontree_menu", parent: wrapper });
 
   const expandAllBtn = createEl("button", {
+    class: "jsontree_menu_btn",
     text: "Expand All",
     handlers: { click: () => tree.expand() },
     parent: menu,
   });
 
   const collapseAllBtn = createEl("button", {
+    class: "jsontree_menu_btn",
     text: "Collapse All",
     handlers: { click: () => tree.collapse() },
     parent: menu,
   });
 
   const showSourceBtn = createEl("button", {
+    class: "jsontree_menu_btn",
     text: "Show Source",
     handlers: { click: () => tree.showSource() },
     parent: menu,

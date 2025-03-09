@@ -1,3 +1,15 @@
+:root {
+  --menu-bg: #444;
+  --menu-border: #666;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --menu-bg: #ddd;
+    --menu-border: #bbb;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -15,8 +27,23 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 10px;
-  background-color: #000;
-  border-bottom: 1px solid #777;
+  background-color: var(--menu-bg);
+  border-bottom: 1px solid var(--menu-border);
+}
+
+.jsontree_menu_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px;
+  color: #fff;
+  background-color: var(--menu-bg);
+  border-radius: 4px;
+}
+.jsontree_menu_btn:hover {
+  background-color: var(--menu-border);
+  cursor: pointer;
 }
 
 .jsontree_preview {

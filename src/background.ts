@@ -1,38 +1,43 @@
+import type { View } from "./worker/types";
+
+import { allViews, initialView } from "./worker/constants";
+import { createEl, emptyChildren, getNextItem } from "./worker/utils";
+import { createTree } from "./jsontree/tree";
+
 const activeTheme = "unikitty-dark";
 
-// Constants
-const initialView = "preview";
-const allViews = ["preview", "source"];
-const viewStates = {
+const viewStates: Record<View, string> = {
   preview: "Show Source",
   source: "Hide Source",
 };
 
-let rawData, tree;
+let rawData: string;
+let tree: any;
 
 document.addEventListener("DOMContentLoaded", init);
 
-function getPreviewElement() {
+function getPreviewElement(): HTMLElement | null {
   return document.querySelector(".jsontree_view[data-view='preview']");
 }
 
-function init() {
+function init(): void {
   const data = parseJSON();
   if (!data) {
     return;
   }
+
   render(data);
 
   tree.findAndHandle(
-    (node) => node.type === "string",
-    (node) => {
+    (node: any) => node.type === "string",
+    (node: any) => {
       node.mark();
       node.expandParent("isRecursive");
     }
   );
 }
 
-function render(data, target = document.body) {
+function render(data: any, target: HTMLElement = document.body): void {
   emptyChildren(target);
   target.classList.add("jsontree_bg");
   target.setAttribute("data-theme", activeTheme);
@@ -43,11 +48,11 @@ function render(data, target = document.body) {
     parent: target,
   });
 
-  tree = jsonTree.create(data, getPreviewElement());
+  tree = createTree(data, getPreviewElement());
 }
 
-function createMenu() {
-  const menu = createEl("div", {
+function createMenu(): HTMLElement {
+  return createEl("div", {
     class: "jsontree_menu",
     children: [
       createEl("button", {
@@ -70,11 +75,9 @@ function createMenu() {
       }),
     ],
   });
-
-  return menu;
 }
 
-function createViewport() {
+function createViewport(): HTMLElement {
   return createEl("div", {
     class: "jsontree_viewport",
     children: [
@@ -90,10 +93,12 @@ function createViewport() {
   });
 }
 
-function toggleView(e) {
-  const activeView = document.querySelector(".jsontree_view-active");
-  const views = document.querySelectorAll(".jsontree_view");
-  const toggleViewBtn = e.target;
+function toggleView(e: MouseEvent): void {
+  const activeView = document.querySelector(
+    ".jsontree_view-active"
+  ) as HTMLElement;
+  const views = document.querySelectorAll<HTMLElement>(".jsontree_view");
+  const toggleViewBtn = e.target as HTMLButtonElement;
 
   const currentView = activeView?.dataset.view ?? initialView;
   const nextView = getNextItem(currentView, allViews);
@@ -104,79 +109,34 @@ function toggleView(e) {
 
   toggleViewBtn.textContent = viewStates[nextView];
 
-  for (let view of views) {
+  views.forEach((view) => {
     view.classList.remove("jsontree_view-active");
 
     if (view.dataset.view === nextView) {
       view.classList.add("jsontree_view-active");
     }
-  }
+  });
 }
 
-function lazyLoadSource() {
-  const source = document.querySelector(".jsontree_view[data-view='source']");
+function lazyLoadSource(): void {
+  const source = document.querySelector(
+    ".jsontree_view[data-view='source']"
+  ) as HTMLElement;
   if (source.dataset.loaded === "true") {
     return;
   }
 
   createEl("pre", { text: rawData, parent: source });
 
-  source.dataset.loaded = true;
+  source.dataset.loaded = "true";
 }
 
-function parseJSON() {
-  rawData = document.querySelector("body > pre").textContent;
+function parseJSON(): any {
+  rawData = document.querySelector("body > pre")?.textContent || "";
   try {
     return JSON.parse(rawData);
   } catch (e) {
     console.log("Content is not JSON");
   }
   return null;
-}
-
-// Utility functions
-
-function createEl(
-  tagName,
-  { children, class: className, data, handlers, parent, text }
-) {
-  const element = document.createElement(tagName);
-  if (className) {
-    element.classList.add(...className.split(/\s+/));
-  }
-  if (data) {
-    for (let key in data) {
-      element.dataset[key] = data[key];
-      element.setAttribute("data-" + key, data[key]);
-    }
-  }
-  if (text) {
-    element.textContent = text;
-  }
-  if (handlers) {
-    for (let eventName in handlers) {
-      element.addEventListener(eventName, handlers[eventName]);
-    }
-  }
-  if (children) {
-    for (let child of children) {
-      element.appendChild(child);
-    }
-  }
-  if (parent) {
-    parent.appendChild(element);
-  }
-  return element;
-}
-
-function emptyChildren(element) {
-  while (element.firstChild) {
-    element.removeChild(element.firstChild);
-  }
-}
-
-function getNextItem(item, items) {
-  const index = items.indexOf(item);
-  const nextIndex = (index + 1) % items.length;
-  return items[nextIndex];
 }

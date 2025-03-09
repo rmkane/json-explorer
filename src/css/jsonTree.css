@@ -9,6 +9,18 @@
   --jtree-highlight: #fff2aa;
 }
 
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 /* Background for the tree. May use for <body> element */
 .jsontree_bg {
   background: var(--jtree-bg);
@@ -16,11 +28,23 @@
 
 /* Styles for the container of the tree (e.g. fonts, margins etc.) */
 .jsontree_tree {
-  margin-left: 1rem;
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
     Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
   line-height: 1.5;
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.jsontree_tree * {
+  margin: 0;
+  padding: 0;
+}
+
+.jsontree_tree,
+.jsontree_tree ul {
+  list-style: none;
 }
 
 .jsontree_symbol {

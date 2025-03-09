@@ -1,4 +1,4 @@
-# JSON Tree
+# JSON Explorer
 
 This is a TypeScript project that converts a JavaScript object into a JSON tree.
 

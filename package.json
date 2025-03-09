@@ -4,7 +4,7 @@
   "main": "dist/content.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmkane/json-tree.git"
+    "url": "https://github.com/rmkane/json-explorer.git"
   },
   "scripts": {
     "build": "node build.mjs",

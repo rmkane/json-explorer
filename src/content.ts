@@ -1,11 +1,11 @@
+import type { View } from "./extension/types";
 import type { TreeNode } from "./jsontree/types";
-import type { View } from "./worker/types";
 
+import { allViews, initialView } from "./extension/constants";
+import { createMenu } from "./extension/menu";
+import { createEl, emptyChildren, getNextItem } from "./extension/utils";
+import { createViewport } from "./extension/viewport";
 import { createTree, Tree } from "./jsontree/tree";
-import { allViews, initialView } from "./worker/constants";
-import { createMenu } from "./worker/menu";
-import { createEl, emptyChildren, getNextItem } from "./worker/utils";
-import { createViewport } from "./worker/viewport";
 
 const activeTheme = "unikitty-dark";
 

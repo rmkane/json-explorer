@@ -1,4 +1,3 @@
-import { Tree } from "../jsontree/tree";
 import { createEl } from "./utils";
 
 type MenuOptions = {
@@ -38,4 +37,5 @@ function createMenu({
 }
 
 export { createMenu };
+
 export type { MenuOptions };

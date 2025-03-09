@@ -32,6 +32,7 @@ interface TreeNode {
   parent?: TreeNode;
   childNodes?: TreeNode[];
   isComplex?: boolean;
+  mark?: () => void;
   unmark?: () => void;
   expand?: (isRecursive: boolean) => void;
   collapse?: (isRecursive: boolean) => void;

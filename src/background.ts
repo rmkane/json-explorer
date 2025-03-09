@@ -1,8 +1,11 @@
+import type { TreeNode } from "./jsontree/types";
 import type { View } from "./worker/types";
 
+import { createTree, Tree } from "./jsontree/tree";
 import { allViews, initialView } from "./worker/constants";
+import { createMenu } from "./worker/menu";
 import { createEl, emptyChildren, getNextItem } from "./worker/utils";
-import { createTree } from "./jsontree/tree";
+import { createViewport } from "./worker/viewport";
 
 const activeTheme = "unikitty-dark";
 
@@ -12,7 +15,7 @@ const viewStates: Record<View, string> = {
 };
 
 let rawData: string;
-let tree: any;
+let tree: Tree;
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -29,10 +32,10 @@ function init(): void {
   render(data);
 
   tree.findAndHandle(
-    (node: any) => node.type === "string",
-    (node: any) => {
+    (node: TreeNode) => node.type === "string",
+    (node: TreeNode) => {
       node.mark();
-      node.expandParent("isRecursive");
+      node.expandParent(true);
     }
   );
 }
@@ -44,53 +47,22 @@ function render(data: any, target: HTMLElement = document.body): void {
 
   createEl("div", {
     class: "jsontree_wrapper",
-    children: [createMenu(), createViewport()],
+    children: [
+      createMenu({ collapseAll, expandAll, toggleView }),
+      createViewport(),
+    ],
     parent: target,
   });
 
   tree = createTree(data, getPreviewElement());
 }
 
-function createMenu(): HTMLElement {
-  return createEl("div", {
-    class: "jsontree_menu",
-    children: [
-      createEl("button", {
-        class: "jsontree_menu_btn",
-        data: { action: "expand" },
-        text: "Expand All",
-        handlers: { click: () => tree.expand() },
-      }),
-      createEl("button", {
-        class: "jsontree_menu_btn",
-        data: { action: "collapse" },
-        text: "Collapse All",
-        handlers: { click: () => tree.collapse() },
-      }),
-      createEl("button", {
-        class: "jsontree_menu_btn",
-        data: { action: "toggle" },
-        text: "Show Source",
-        handlers: { click: toggleView },
-      }),
-    ],
-  });
+function expandAll(): void {
+  tree.expand();
 }
 
-function createViewport(): HTMLElement {
-  return createEl("div", {
-    class: "jsontree_viewport",
-    children: [
-      createEl("div", {
-        class: "jsontree_view jsontree_view-active",
-        data: { view: "preview" },
-      }),
-      createEl("div", {
-        class: "jsontree_view",
-        data: { view: "source", loaded: false },
-      }),
-    ],
-  });
+function collapseAll(): void {
+  tree.collapse();
 }
 
 function toggleView(e: MouseEvent): void {

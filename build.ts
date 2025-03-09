@@ -1,3 +1,4 @@
+import type { BuildOptions } from "esbuild";
 import { context, build } from "esbuild";
 import fs from "fs/promises";
 import path from "path";
@@ -10,7 +11,12 @@ const __dirname = path.dirname(__filename);
 const distDir = resolvePath("dist");
 const distIconsDir = resolvePath(distDir, "icons");
 
-const files = [
+interface FileToCopy {
+  file: string;
+  dir: string;
+}
+
+const files: FileToCopy[] = [
   { file: "assets/icons/icon16.png", dir: distIconsDir },
   { file: "assets/icons/icon32.png", dir: distIconsDir },
   { file: "assets/icons/icon48.png", dir: distIconsDir },
@@ -20,7 +26,7 @@ const files = [
 ];
 
 // Build the jsonTree library as a browser-compatible script
-const jsonTreeConfig = {
+const jsonTreeConfig: BuildOptions = {
   entryPoints: ["./src/jsonTree.ts"],
   bundle: true,
   //sourcemap: true,
@@ -34,7 +40,7 @@ const jsonTreeConfig = {
 };
 
 // Build the extension content script
-const contentConfig = {
+const contentConfig: BuildOptions = {
   entryPoints: ["./src/content.ts"],
   bundle: true,
   //minify: true,
@@ -44,7 +50,7 @@ const contentConfig = {
   format: "iife",
 };
 
-const backgroundConfig = {
+const backgroundConfig: BuildOptions = {
   entryPoints: ["./src/background.ts"],
   bundle: true,
   //minify: true,
@@ -54,7 +60,7 @@ const backgroundConfig = {
   format: "iife",
 };
 
-const popupConfig = {
+const popupConfig: BuildOptions = {
   entryPoints: ["./src/popup.ts"],
   bundle: true,
   //minify: true,
@@ -65,7 +71,7 @@ const popupConfig = {
 };
 
 // Build the content CSS file
-const contentCssConfig = {
+const contentCssConfig: BuildOptions = {
   entryPoints: ["./src/css/content.css"],
   bundle: true,
   //minify: true,
@@ -74,7 +80,7 @@ const contentCssConfig = {
   loader: { ".svg": "dataurl" },
 };
 
-const popupCssConfig = {
+const popupCssConfig: BuildOptions = {
   entryPoints: ["./src/css/popup.css"],
   bundle: true,
   //minify: true,
@@ -91,7 +97,7 @@ buildAndWatch([
   popupCssConfig,
 ]);
 
-async function buildAndWatch(buildOptions) {
+async function buildAndWatch(buildOptions: BuildOptions[]) {
   if (process.argv.includes("--watch")) {
     watchAll(buildOptions);
   } else {
@@ -99,14 +105,14 @@ async function buildAndWatch(buildOptions) {
   }
 }
 
-async function buildAll(buildOptions) {
+async function buildAll(buildOptions: BuildOptions[]) {
   for (const options of buildOptions) {
     await build(options).catch(() => process.exit(1));
   }
   await copyAllFiles();
 }
 
-async function watchAll(buildOptions) {
+async function watchAll(buildOptions: BuildOptions[]) {
   for (const options of buildOptions) {
     context(options)
       .then((ctx) => ctx.watch())
@@ -119,14 +125,14 @@ async function copyAllFiles() {
   return Promise.all(files.map(copySingleFile));
 }
 
-async function copySingleFile({ file, dir }) {
+async function copySingleFile({ file, dir }: FileToCopy) {
   const srcPath = resolvePath(file);
   const destPath = resolvePath(dir, path.basename(srcPath));
   await createDirIfNotExists(path.dirname(destPath));
   return fs.copyFile(srcPath, destPath);
 }
 
-async function createDirIfNotExists(dir) {
+async function createDirIfNotExists(dir: string) {
   try {
     await fs.access(dir);
   } catch {
@@ -134,6 +140,6 @@ async function createDirIfNotExists(dir) {
   }
 }
 
-function resolvePath(...args) {
+function resolvePath(...args: string[]) {
   return path.resolve(__dirname, ...args);
 }

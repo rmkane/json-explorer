@@ -2,13 +2,14 @@
   "name": "json-explorer",
   "version": "0.0.1",
   "main": "dist/content.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/rmkane/json-explorer.git"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "watch": "node build.mjs --watch"
+    "build": "ts-node build.ts",
+    "watch": "ts-node build.ts --watch"
   },
   "keywords": [
     "json",
@@ -19,7 +20,11 @@
   "license": "MIT",
   "description": "A JSON explorer for the browser",
   "devDependencies": {
-    "esbuild": "^0.25.0"
+    "@types/chrome": "^0.0.308",
+    "@types/node": "^22.13.10",
+    "esbuild": "^0.25.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
@@ -28,8 +33,5 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
-  },
-  "dependencies": {
-    "@types/chrome": "^0.0.308"
   }
 }

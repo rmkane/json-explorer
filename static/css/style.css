@@ -1,12 +1,14 @@
 :root {
   --menu-bg: #444;
   --menu-border: #666;
+  --source-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --menu-bg: #ddd;
     --menu-border: #bbb;
+    --source-color: #000;
   }
 }
 
@@ -46,9 +48,32 @@ body {
   cursor: pointer;
 }
 
-.jsontree_preview {
+.jsontree_viewport {
+  position: relative;
   display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.jsontree_view[data-view="preview"] {
+  position: absolute;
+  display: none;
   flex-direction: column;
   flex: 1;
   padding: 1rem 0;
+}
+
+.jsontree_view[data-view="source"] {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  color: var(--source-color);
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.jsontree_view.jsontree_view-active {
+  display: flex;
 }

@@ -1,0 +1,10 @@
+[data-theme="panda-syntax-light"] {
+  --jtree-bg: #e6e6e6;
+  --jtree-fg: #2a2c2d;
+  --jtree-attr: #7641bb;
+  --jtree-keyword: #d92792;
+  --jtree-number: #7641bb;
+  --jtree-punctuation: #2a2c2d;
+  --jtree-string: #0d7d6c;
+  --jtree-highlight: #7641bb;
+}

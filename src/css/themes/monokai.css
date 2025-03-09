@@ -1,0 +1,10 @@
+[data-theme="monokai"] {
+  --jtree-bg: #272822;
+  --jtree-fg: #f8f8f2;
+  --jtree-attr: #66d9ef;
+  --jtree-keyword: #ae81ff;
+  --jtree-number: #fd971f;
+  --jtree-punctuation: #f8f8f2;
+  --jtree-string: #a6e22e;
+  --jtree-highlight: #f4bf75;
+}

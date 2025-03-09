@@ -1,0 +1,10 @@
+[data-theme="shapeshifter"] {
+  --jtree-bg: #f9f9f9;
+  --jtree-fg: #102015;
+  --jtree-attr: #3b48e3;
+  --jtree-keyword: #f996e2;
+  --jtree-number: #e09448;
+  --jtree-punctuation: #102015;
+  --jtree-string: #0ed839;
+  --jtree-highlight: #dddd13;
+}

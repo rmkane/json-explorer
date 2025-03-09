@@ -1,0 +1,10 @@
+[data-theme="cupcake"] {
+  --jtree-bg: #fbf1f2;
+  --jtree-fg: #8b8198;
+  --jtree-attr: #7297B9;
+  --jtree-keyword: #BB99B4;
+  --jtree-number: #EBB790;
+  --jtree-punctuation: #8b8198;
+  --jtree-string: #A3B367;
+  --jtree-highlight: #DCB16C;
+}

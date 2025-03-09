@@ -1,0 +1,10 @@
+[data-theme="tender"] {
+  --jtree-bg: #282828;
+  --jtree-fg: #eeeeee;
+  --jtree-attr: #b3deef;
+  --jtree-keyword: #d3b987;
+  --jtree-number: #dc9656;
+  --jtree-punctuation: #eeeeee;
+  --jtree-string: #c9d05c;
+  --jtree-highlight: #ffc24b;
+}

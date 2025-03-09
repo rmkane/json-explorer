@@ -1,6 +1,14 @@
 @import "reset.css";
 @import "jsonTree.css";
 
+/* Themes */
+@import "themes/chalk.css";
+@import "themes/dracula.css";
+@import "themes/github.css";
+@import "themes/monokai.css";
+@import "themes/obsidian.css";
+@import "themes/unikitty-dark.css";
+
 :root {
   --menu-bg: #444;
   --menu-border: #666;

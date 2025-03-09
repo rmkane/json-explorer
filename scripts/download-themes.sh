@@ -9,7 +9,7 @@ SCRIPT_DIR=$(dirname "$0")
 ROOT_DIR=$(realpath "$SCRIPT_DIR/..")
 
 # Directory where the themes will be stored
-THEME_DIR="$ROOT_DIR/static/css/themes"
+THEME_DIR="$ROOT_DIR/src/css/themes"
 
 # Directory where the themes will be downloaded
 REMOTE_CSS_DIR="$SCRIPT_DIR/themes"

@@ -1,0 +1,10 @@
+[data-theme="dracula"] {
+  --jtree-bg: #282936;
+  --jtree-fg: #e9e9f4;
+  --jtree-attr: #62d6e8;
+  --jtree-keyword: #b45bcf;
+  --jtree-number: #b45bcf;
+  --jtree-punctuation: #e9e9f4;
+  --jtree-string: #ebff87;
+  --jtree-highlight: #00f769;
+}

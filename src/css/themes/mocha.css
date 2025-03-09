@@ -1,0 +1,10 @@
+[data-theme="mocha"] {
+  --jtree-bg: #3B3228;
+  --jtree-fg: #d0c8c6;
+  --jtree-attr: #8ab3b5;
+  --jtree-keyword: #a89bb9;
+  --jtree-number: #d28b71;
+  --jtree-punctuation: #d0c8c6;
+  --jtree-string: #beb55b;
+  --jtree-highlight: #f4bc87;
+}

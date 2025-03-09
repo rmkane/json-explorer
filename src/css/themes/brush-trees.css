@@ -1,0 +1,10 @@
+[data-theme="brush-trees"] {
+  --jtree-bg: #E3EFEF;
+  --jtree-fg: #6D828E;
+  --jtree-attr: #868cb3;
+  --jtree-keyword: #b386b2;
+  --jtree-number: #d8bba2;
+  --jtree-punctuation: #6D828E;
+  --jtree-string: #87b386;
+  --jtree-highlight: #aab386;
+}

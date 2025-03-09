@@ -1,0 +1,10 @@
+[data-theme="ros-pine"] {
+  --jtree-bg: #191724;
+  --jtree-fg: #e0def4;
+  --jtree-attr: #9ccfd8;
+  --jtree-keyword: #c4a7e7;
+  --jtree-number: #eb6f92;
+  --jtree-punctuation: #e0def4;
+  --jtree-string: #ebbcba;
+  --jtree-highlight: #f6c177;
+}

@@ -1,0 +1,10 @@
+[data-theme="color-brewer"] {
+  --jtree-bg: #fff;
+  --jtree-fg: #000;
+  --jtree-attr: #e6550d;
+  --jtree-keyword: #3182bd;
+  --jtree-number: #31a354;
+  --jtree-punctuation: #000;
+  --jtree-string: #756bb1;
+  --jtree-highlight: #3182bd;
+}

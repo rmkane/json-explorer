@@ -27,6 +27,7 @@ VAR_HIGHLIGHT = f"--{PREFIX}highlight"
 # Define the CSS classes and corresponding CSS variables
 MAPPINGS = {
     "hljs-attr": VAR_ATTR,
+    "hljs-attribute": VAR_ATTR,
     "hljs-punctuation": VAR_PUNCTUATION,
     "hljs-number": VAR_NUMBER,
     "hljs-string": VAR_STRING,

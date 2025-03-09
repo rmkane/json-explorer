@@ -1,0 +1,10 @@
+[data-theme="black-metal-burzum"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c1c1c1;
+  --jtree-attr: #888888;
+  --jtree-keyword: #999999;
+  --jtree-number: #aaaaaa;
+  --jtree-punctuation: #c1c1c1;
+  --jtree-string: #ddeecc;
+  --jtree-highlight: #99bbaa;
+}

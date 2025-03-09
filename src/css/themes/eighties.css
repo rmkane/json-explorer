@@ -1,0 +1,10 @@
+[data-theme="eighties"] {
+  --jtree-bg: #2d2d2d;
+  --jtree-fg: #d3d0c8;
+  --jtree-attr: #6699cc;
+  --jtree-keyword: #cc99cc;
+  --jtree-number: #f99157;
+  --jtree-punctuation: #d3d0c8;
+  --jtree-string: #99cc99;
+  --jtree-highlight: #ffcc66;
+}

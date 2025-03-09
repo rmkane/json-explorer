@@ -1,0 +1,10 @@
+[data-theme="woodland"] {
+  --jtree-bg: #231e18;
+  --jtree-fg: #cabcb1;
+  --jtree-attr: #88a4d3;
+  --jtree-keyword: #bb90e2;
+  --jtree-number: #ca7f32;
+  --jtree-punctuation: #cabcb1;
+  --jtree-string: #b7ba53;
+  --jtree-highlight: #e0ac16;
+}

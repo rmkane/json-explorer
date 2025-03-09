@@ -1,0 +1,10 @@
+[data-theme="cupertino"] {
+  --jtree-bg: #ffffff;
+  --jtree-fg: #404040;
+  --jtree-attr: #0000ff;
+  --jtree-keyword: #a90d91;
+  --jtree-number: #eb8500;
+  --jtree-punctuation: #404040;
+  --jtree-string: #007400;
+  --jtree-highlight: #826b28;
+}

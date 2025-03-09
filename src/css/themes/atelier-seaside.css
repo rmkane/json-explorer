@@ -1,0 +1,10 @@
+[data-theme="atelier-seaside"] {
+  --jtree-bg: #131513;
+  --jtree-fg: #8ca68c;
+  --jtree-attr: #3d62f5;
+  --jtree-keyword: #ad2bee;
+  --jtree-number: #87711d;
+  --jtree-punctuation: #8ca68c;
+  --jtree-string: #29a329;
+  --jtree-highlight: #98981b;
+}

@@ -1,0 +1,10 @@
+[data-theme="ocean"] {
+  --jtree-bg: #2b303b;
+  --jtree-fg: #c0c5ce;
+  --jtree-attr: #8fa1b3;
+  --jtree-keyword: #b48ead;
+  --jtree-number: #d08770;
+  --jtree-punctuation: #c0c5ce;
+  --jtree-string: #a3be8c;
+  --jtree-highlight: #ebcb8b;
+}

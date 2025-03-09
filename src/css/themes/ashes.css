@@ -1,0 +1,10 @@
+[data-theme="ashes"] {
+  --jtree-bg: #1C2023;
+  --jtree-fg: #C7CCD1;
+  --jtree-attr: #AE95C7;
+  --jtree-keyword: #C795AE;
+  --jtree-number: #C7C795;
+  --jtree-punctuation: #C7CCD1;
+  --jtree-string: #95C7AE;
+  --jtree-highlight: #AEC795;
+}

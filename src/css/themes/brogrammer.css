@@ -1,0 +1,10 @@
+[data-theme="brogrammer"] {
+  --jtree-bg: #1f1f1f;
+  --jtree-fg: #4e5ab7;
+  --jtree-attr: #5350b9;
+  --jtree-keyword: #0f7ddb;
+  --jtree-number: #de352e;
+  --jtree-punctuation: #4e5ab7;
+  --jtree-string: #f3bd09;
+  --jtree-highlight: #1dd361;
+}

@@ -1,0 +1,10 @@
+[data-theme="materia"] {
+  --jtree-bg: #263238;
+  --jtree-fg: #CDD3DE;
+  --jtree-attr: #89DDFF;
+  --jtree-keyword: #82AAFF;
+  --jtree-number: #EA9560;
+  --jtree-punctuation: #CDD3DE;
+  --jtree-string: #8BD649;
+  --jtree-highlight: #FFCC00;
+}

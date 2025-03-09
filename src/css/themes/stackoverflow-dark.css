@@ -1,0 +1,10 @@
+[data-theme="stackoverflow-dark"] {
+  --jtree-bg: #1c1b1b;
+  --jtree-fg: #ffffff;
+  --jtree-attr: #c59bc1;
+  --jtree-keyword: #88aece;
+  --jtree-number: #f08d49;
+  --jtree-punctuation: #ffffff;
+  --jtree-string: #b5bd68;
+  --jtree-highlight: #f08d49;
+}

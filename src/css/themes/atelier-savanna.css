@@ -1,0 +1,10 @@
+[data-theme="atelier-savanna"] {
+  --jtree-bg: #171c19;
+  --jtree-fg: #87928a;
+  --jtree-attr: #478c90;
+  --jtree-keyword: #55859b;
+  --jtree-number: #9f713c;
+  --jtree-punctuation: #87928a;
+  --jtree-string: #489963;
+  --jtree-highlight: #a07e3b;
+}

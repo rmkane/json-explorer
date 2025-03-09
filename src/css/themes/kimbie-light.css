@@ -1,0 +1,10 @@
+[data-theme="kimbie-light"] {
+  --jtree-bg: #fbebd4;
+  --jtree-fg: #84613d;
+  --jtree-attr: #f06431;
+  --jtree-keyword: #98676a;
+  --jtree-number: #f79a32;
+  --jtree-punctuation: #84613d;
+  --jtree-string: #889b4a;
+  --jtree-highlight: #f06431;
+}

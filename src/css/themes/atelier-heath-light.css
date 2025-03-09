@@ -1,0 +1,10 @@
+[data-theme="atelier-heath-light"] {
+  --jtree-bg: #f7f3f7;
+  --jtree-fg: #695d69;
+  --jtree-attr: #516aec;
+  --jtree-keyword: #7b59c0;
+  --jtree-number: #a65926;
+  --jtree-punctuation: #695d69;
+  --jtree-string: #918b3b;
+  --jtree-highlight: #bb8a35;
+}

@@ -1,0 +1,10 @@
+[data-theme="qtcreator-dark"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #aaaaaa;
+  --jtree-attr: #ff5555;
+  --jtree-keyword: #ffff55;
+  --jtree-number: #ff55ff;
+  --jtree-punctuation: #aaaaaa;
+  --jtree-string: #ff55ff;
+  --jtree-highlight: #aaaaaa;
+}

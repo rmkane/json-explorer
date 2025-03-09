@@ -1,7 +1,7 @@
 {
-  "name": "json-tree",
+  "name": "json-explorer",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/content.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/rmkane/json-tree.git"
@@ -15,10 +15,21 @@
     "tree",
     "viewer"
   ],
-  "author": "rmkane",
+  "author": "Ryan Kane",
   "license": "MIT",
-  "description": "A JSON tree viewer for the browser",
+  "description": "A JSON explorer for the browser",
   "devDependencies": {
     "esbuild": "^0.25.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.308"
   }
 }

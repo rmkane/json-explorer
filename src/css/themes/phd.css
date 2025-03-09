@@ -1,0 +1,10 @@
+[data-theme="phd"] {
+  --jtree-bg: #061229;
+  --jtree-fg: #b8bbc2;
+  --jtree-attr: #5299bf;
+  --jtree-keyword: #9989cc;
+  --jtree-number: #f0a000;
+  --jtree-punctuation: #b8bbc2;
+  --jtree-string: #99bf52;
+  --jtree-highlight: #fbd461;
+}

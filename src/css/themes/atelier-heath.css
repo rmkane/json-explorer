@@ -1,0 +1,10 @@
+[data-theme="atelier-heath"] {
+  --jtree-bg: #1b181b;
+  --jtree-fg: #ab9bab;
+  --jtree-attr: #516aec;
+  --jtree-keyword: #7b59c0;
+  --jtree-number: #a65926;
+  --jtree-punctuation: #ab9bab;
+  --jtree-string: #918b3b;
+  --jtree-highlight: #bb8a35;
+}

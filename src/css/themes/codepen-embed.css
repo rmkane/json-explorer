@@ -1,0 +1,10 @@
+[data-theme="codepen-embed"] {
+  --jtree-bg: #222;
+  --jtree-fg: #fff;
+  --jtree-attr: #9b869b;
+  --jtree-keyword: #8f9c6c;
+  --jtree-number: #ab875d;
+  --jtree-punctuation: #fff;
+  --jtree-string: #8f9c6c;
+  --jtree-highlight: #9b869b;
+}

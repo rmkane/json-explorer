@@ -1,0 +1,10 @@
+[data-theme="hopscotch"] {
+  --jtree-bg: #322931;
+  --jtree-fg: #b9b5b8;
+  --jtree-attr: #1290bf;
+  --jtree-keyword: #c85e7c;
+  --jtree-number: #fd8b19;
+  --jtree-punctuation: #b9b5b8;
+  --jtree-string: #8fc13e;
+  --jtree-highlight: #fdcc59;
+}

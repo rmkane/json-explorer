@@ -1,0 +1,10 @@
+[data-theme="idea"] {
+  --jtree-bg: #fff;
+  --jtree-fg: #000;
+  --jtree-attr: #0000ff;
+  --jtree-keyword: #000080;
+  --jtree-number: #0000ff;
+  --jtree-punctuation: #000;
+  --jtree-string: #008000;
+  --jtree-highlight: #000;
+}

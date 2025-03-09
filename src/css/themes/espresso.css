@@ -1,0 +1,10 @@
+[data-theme="espresso"] {
+  --jtree-bg: #2d2d2d;
+  --jtree-fg: #cccccc;
+  --jtree-attr: #6c99bb;
+  --jtree-keyword: #d197d9;
+  --jtree-number: #f9a959;
+  --jtree-punctuation: #cccccc;
+  --jtree-string: #a5c261;
+  --jtree-highlight: #ffc66d;
+}

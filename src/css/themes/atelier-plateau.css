@@ -1,0 +1,10 @@
+[data-theme="atelier-plateau"] {
+  --jtree-bg: #1b1818;
+  --jtree-fg: #8a8585;
+  --jtree-attr: #7272ca;
+  --jtree-keyword: #8464c4;
+  --jtree-number: #b45a3c;
+  --jtree-punctuation: #8a8585;
+  --jtree-string: #4b8b8b;
+  --jtree-highlight: #a06e3b;
+}

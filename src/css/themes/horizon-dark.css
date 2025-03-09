@@ -1,0 +1,10 @@
+[data-theme="horizon-dark"] {
+  --jtree-bg: #1C1E26;
+  --jtree-fg: #CBCED0;
+  --jtree-attr: #DF5273;
+  --jtree-keyword: #B072D1;
+  --jtree-number: #E58D7D;
+  --jtree-punctuation: #CBCED0;
+  --jtree-string: #EFAF8E;
+  --jtree-highlight: #EFB993;
+}

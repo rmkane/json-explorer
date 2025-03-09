@@ -1,0 +1,10 @@
+[data-theme="paraiso"] {
+  --jtree-bg: #2f1e2e;
+  --jtree-fg: #a39e9b;
+  --jtree-attr: #06b6ef;
+  --jtree-keyword: #815ba4;
+  --jtree-number: #f99b15;
+  --jtree-punctuation: #a39e9b;
+  --jtree-string: #48b685;
+  --jtree-highlight: #fec418;
+}

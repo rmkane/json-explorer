@@ -1,0 +1,10 @@
+[data-theme="googlecode"] {
+  --jtree-bg: white;
+  --jtree-fg: black;
+  --jtree-attr: #000;
+  --jtree-keyword: #008;
+  --jtree-number: #066;
+  --jtree-punctuation: black;
+  --jtree-string: #080;
+  --jtree-highlight: #606;
+}

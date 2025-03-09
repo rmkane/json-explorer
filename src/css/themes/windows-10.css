@@ -1,0 +1,10 @@
+[data-theme="windows-10"] {
+  --jtree-bg: #0c0c0c;
+  --jtree-fg: #cccccc;
+  --jtree-attr: #3b78ff;
+  --jtree-keyword: #b4009e;
+  --jtree-number: #c19c00;
+  --jtree-punctuation: #cccccc;
+  --jtree-string: #16c60c;
+  --jtree-highlight: #f9f1a5;
+}

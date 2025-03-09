@@ -1,0 +1,10 @@
+[data-theme="dirtysea"] {
+  --jtree-bg: #e0e0e0;
+  --jtree-fg: #000000;
+  --jtree-attr: #007300;
+  --jtree-keyword: #000090;
+  --jtree-number: #006565;
+  --jtree-punctuation: #000000;
+  --jtree-string: #730073;
+  --jtree-highlight: #755B00;
+}

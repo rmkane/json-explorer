@@ -1,0 +1,10 @@
+[data-theme="material-lighter"] {
+  --jtree-bg: #FAFAFA;
+  --jtree-fg: #80CBC4;
+  --jtree-attr: #6182B8;
+  --jtree-keyword: #7C4DFF;
+  --jtree-number: #F76D47;
+  --jtree-punctuation: #80CBC4;
+  --jtree-string: #91B859;
+  --jtree-highlight: #FFB62C;
+}

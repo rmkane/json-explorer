@@ -1,0 +1,10 @@
+[data-theme="github"] {
+  --jtree-bg: #ffffff;
+  --jtree-fg: #333333;
+  --jtree-attr: #795da3;
+  --jtree-keyword: #a71d5d;
+  --jtree-number: #0086b3;
+  --jtree-punctuation: #333333;
+  --jtree-string: #183691;
+  --jtree-highlight: #795da3;
+}

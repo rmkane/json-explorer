@@ -1,0 +1,10 @@
+[data-theme="synth-midnight-terminal-light"] {
+  --jtree-bg: #dddfe0;
+  --jtree-fg: #28292a;
+  --jtree-attr: #03aeff;
+  --jtree-keyword: #ea5ce2;
+  --jtree-number: #ea770d;
+  --jtree-punctuation: #28292a;
+  --jtree-string: #06ea61;
+  --jtree-highlight: #c9d364;
+}

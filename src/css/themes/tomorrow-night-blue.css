@@ -1,0 +1,10 @@
+[data-theme="tomorrow-night-blue"] {
+  --jtree-bg: #002451;
+  --jtree-fg: white;
+  --jtree-attr: #ffeead;
+  --jtree-keyword: #ebbbff;
+  --jtree-number: #ffc58f;
+  --jtree-punctuation: white;
+  --jtree-string: #d1f1a9;
+  --jtree-highlight: #bbdaff;
+}

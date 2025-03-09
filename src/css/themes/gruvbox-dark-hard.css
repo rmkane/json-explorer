@@ -1,0 +1,10 @@
+[data-theme="gruvbox-dark-hard"] {
+  --jtree-bg: #1d2021;
+  --jtree-fg: #d5c4a1;
+  --jtree-attr: #83a598;
+  --jtree-keyword: #d3869b;
+  --jtree-number: #fe8019;
+  --jtree-punctuation: #d5c4a1;
+  --jtree-string: #b8bb26;
+  --jtree-highlight: #fabd2f;
+}

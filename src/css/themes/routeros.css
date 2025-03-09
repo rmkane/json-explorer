@@ -1,0 +1,10 @@
+[data-theme="routeros"] {
+  --jtree-bg: #F0F0F0;
+  --jtree-fg: #444;
+  --jtree-attr: #0E9A00;
+  --jtree-keyword: #000000;
+  --jtree-number: #880000;
+  --jtree-punctuation: #444;
+  --jtree-string: #880000;
+  --jtree-highlight: #880000;
+}

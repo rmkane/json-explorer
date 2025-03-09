@@ -1,0 +1,10 @@
+[data-theme="equilibrium-light"] {
+  --jtree-bg: #f5f0e7;
+  --jtree-fg: #43474e;
+  --jtree-attr: #0073b5;
+  --jtree-keyword: #4e66b6;
+  --jtree-number: #bf3e05;
+  --jtree-punctuation: #43474e;
+  --jtree-string: #637200;
+  --jtree-highlight: #9d6f00;
+}

@@ -1,0 +1,10 @@
+[data-theme="xt256"] {
+  --jtree-bg: #000;
+  --jtree-fg: #eaeaea;
+  --jtree-attr: #ff00ff;
+  --jtree-keyword: #fff000;
+  --jtree-number: bolder;
+  --jtree-punctuation: #eaeaea;
+  --jtree-string: #00ff00;
+  --jtree-highlight: #00ffff;
+}

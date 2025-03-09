@@ -7,7 +7,7 @@ import { createEl, emptyChildren, getNextItem } from "./extension/utils";
 import { createViewport } from "./extension/viewport";
 import { createTree, Tree } from "./jsontree/tree";
 
-const activeTheme = "unikitty-dark";
+const activeTheme = "dracula";
 
 const viewStates: Record<View, string> = {
   preview: "Show Source",

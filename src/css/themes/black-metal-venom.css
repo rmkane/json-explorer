@@ -1,0 +1,10 @@
+[data-theme="black-metal-venom"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c1c1c1;
+  --jtree-attr: #888888;
+  --jtree-keyword: #999999;
+  --jtree-number: #aaaaaa;
+  --jtree-punctuation: #c1c1c1;
+  --jtree-string: #f8f7f2;
+  --jtree-highlight: #79241f;
+}

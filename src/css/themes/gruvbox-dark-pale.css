@@ -1,0 +1,10 @@
+[data-theme="gruvbox-dark-pale"] {
+  --jtree-bg: #262626;
+  --jtree-fg: #dab997;
+  --jtree-attr: #83adad;
+  --jtree-keyword: #d485ad;
+  --jtree-number: #ff8700;
+  --jtree-punctuation: #dab997;
+  --jtree-string: #afaf00;
+  --jtree-highlight: #ffaf00;
+}

@@ -12,7 +12,7 @@ ROOT_DIR=$(realpath "$SCRIPT_DIR/..")
 CSS_DIR="$SCRIPT_DIR/themes"
 
 # Directory where the themes will be stored
-THEME_DIR="$ROOT_DIR/static/css/themes"
+THEME_DIR="$ROOT_DIR/src/css/themes"
 
 # Create directories if they don't exist
 mkdir -p "$THEME_DIR"

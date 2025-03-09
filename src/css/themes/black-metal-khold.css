@@ -1,0 +1,10 @@
+[data-theme="black-metal-khold"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c1c1c1;
+  --jtree-attr: #888888;
+  --jtree-keyword: #999999;
+  --jtree-number: #aaaaaa;
+  --jtree-punctuation: #c1c1c1;
+  --jtree-string: #eceee3;
+  --jtree-highlight: #974b46;
+}

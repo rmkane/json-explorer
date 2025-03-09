@@ -1,0 +1,10 @@
+[data-theme="xcode-dusk"] {
+  --jtree-bg: #282B35;
+  --jtree-fg: #939599;
+  --jtree-attr: #790EAD;
+  --jtree-keyword: #B21889;
+  --jtree-number: #786DC5;
+  --jtree-punctuation: #939599;
+  --jtree-string: #DF0002;
+  --jtree-highlight: #438288;
+}

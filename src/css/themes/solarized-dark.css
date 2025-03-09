@@ -1,0 +1,10 @@
+[data-theme="solarized-dark"] {
+  --jtree-bg: #002b36;
+  --jtree-fg: #93a1a1;
+  --jtree-attr: #268bd2;
+  --jtree-keyword: #6c71c4;
+  --jtree-number: #cb4b16;
+  --jtree-punctuation: #93a1a1;
+  --jtree-string: #859900;
+  --jtree-highlight: #b58900;
+}

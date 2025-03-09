@@ -1,0 +1,10 @@
+[data-theme="atelier-dune"] {
+  --jtree-bg: #20201d;
+  --jtree-fg: #a6a28c;
+  --jtree-attr: #6684e1;
+  --jtree-keyword: #b854d4;
+  --jtree-number: #b65611;
+  --jtree-punctuation: #a6a28c;
+  --jtree-string: #60ac39;
+  --jtree-highlight: #ae9513;
+}

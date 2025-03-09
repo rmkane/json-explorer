@@ -1,0 +1,10 @@
+[data-theme="black-metal-gorgoroth"] {
+  --jtree-bg: #000000;
+  --jtree-fg: #c1c1c1;
+  --jtree-attr: #888888;
+  --jtree-keyword: #999999;
+  --jtree-number: #aaaaaa;
+  --jtree-punctuation: #c1c1c1;
+  --jtree-string: #9b8d7f;
+  --jtree-highlight: #8c7f70;
+}

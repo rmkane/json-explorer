@@ -1,4 +1,5 @@
 @import "jsonTree.css";
+@import "common.css";
 
 /* Themes */
 @import "themes/chalk.css";
@@ -9,57 +10,47 @@
 @import "themes/unikitty-dark.css";
 
 :root {
-  --menu-bg: #444;
   --menu-border: #666;
   --source-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --menu-bg: #ddd;
     --menu-border: #bbb;
     --source-color: #000;
   }
 }
 
-.jsontree_wrapper {
+.json-explorer_wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.jsontree_menu {
+.json-explorer_menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background-color: var(--menu-bg);
+  background-color: var(--background-color);
   border-bottom: 1px solid var(--menu-border);
 }
 
-.jsontree_menu_btn {
+.json-explorer_menu-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
-  padding: 5px;
-  color: #fff;
-  background-color: var(--menu-bg);
-  border-radius: 4px;
-}
-.jsontree_menu_btn:hover {
-  background-color: var(--menu-border);
-  cursor: pointer;
 }
 
-.jsontree_viewport {
+.json-explorer_viewport {
   position: relative;
   display: flex;
   flex-direction: row;
   flex: 1;
 }
 
-.jsontree_view[data-view="preview"] {
+.json-explorer_view[data-view="preview"] {
   position: absolute;
   display: none;
   flex-direction: column;
@@ -67,7 +58,7 @@
   padding: 1rem 0;
 }
 
-.jsontree_view[data-view="source"] {
+.json-explorer_view[data-view="source"] {
   position: absolute;
   display: none;
   flex-direction: column;
@@ -79,6 +70,6 @@
   font-size: 0.8rem;
 }
 
-.jsontree_view.jsontree_view-active {
+.json-explorer_view.json-explorer_view-active {
   display: flex;
 }

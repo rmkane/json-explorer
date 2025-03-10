@@ -22,12 +22,14 @@
 }
 
 /* Background for the tree. May use for <body> element */
-.jsontree_bg {
+.json-tree_bg {
   background: var(--jtree-bg);
+  margin: 0;
+  padding: 0;
 }
 
 /* Styles for the container of the tree (e.g. fonts, margins etc.) */
-.jsontree_tree {
+.json-tree_tree {
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
     Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
@@ -37,38 +39,38 @@
   padding: 0;
 }
 
-.jsontree_tree * {
+.json-tree_tree * {
   margin: 0;
   padding: 0;
 }
 
-.jsontree_tree,
-.jsontree_tree ul {
+.json-tree_tree,
+.json-tree_tree ul {
   list-style: none;
 }
 
-.jsontree_symbol {
+.json-tree_symbol {
   color: var(--jtree-punctuation);
 }
 
 /* Styles for a list of child nodes */
-.jsontree_child-nodes {
+.json-tree_child-nodes {
   display: none;
   margin-left: 1rem;
 }
-.jsontree_node_expanded
-  > .jsontree_value-wrapper
-  > .jsontree_value
-  > .jsontree_child-nodes {
+.json-tree_node_expanded
+  > .json-tree_value-wrapper
+  > .json-tree_value
+  > .json-tree_child-nodes {
   display: block;
 }
 
 /* Styles for labels */
-.jsontree_label-wrapper {
+.json-tree_label-wrapper {
   float: left;
   margin-right: 8px;
 }
-.jsontree_label {
+.json-tree_label {
   font-weight: normal;
   vertical-align: top;
   color: var(--jtree-attr);
@@ -77,41 +79,41 @@
   border-radius: 4px;
   cursor: default;
 }
-.jsontree_node_marked > .jsontree_label-wrapper > .jsontree_label {
+.json-tree_node_marked > .json-tree_label-wrapper > .json-tree_label {
   background: var(--jtree-highlight);
 }
 
 /* Styles for values */
-.jsontree_value-wrapper {
+.json-tree_value-wrapper {
   display: block;
   overflow: hidden;
 }
-.jsontree_node_complex > .jsontree_value-wrapper {
+.json-tree_node_complex > .json-tree_value-wrapper {
   overflow: inherit;
 }
-.jsontree_value {
+.json-tree_value {
   vertical-align: top;
   display: inline;
 }
-.jsontree_value_null {
+.json-tree_value_null {
   color: var(--jtree-keyword);
   font-weight: bold;
 }
-.jsontree_value_string {
+.json-tree_value_string {
   color: var(--jtree-string);
   font-weight: bold;
 }
-.jsontree_value_number {
+.json-tree_value_number {
   color: var(--jtree-number);
   font-weight: bold;
 }
-.jsontree_value_boolean {
+.json-tree_value_boolean {
   color: var(--jtree-keyword);
   font-weight: bold;
 }
 
 /* Styles for active elements */
-.jsontree_expand-button {
+.json-tree_expand-button {
   position: absolute;
   top: 2px;
   left: -15px;
@@ -120,35 +122,35 @@
   height: 11px;
   background-image: url("images/icons_dark.svg");
 }
-.jsontree_node_expanded
-  > .jsontree_label-wrapper
-  > .jsontree_label
-  > .jsontree_expand-button {
+.json-tree_node_expanded
+  > .json-tree_label-wrapper
+  > .json-tree_label
+  > .json-tree_expand-button {
   background-position: 0 -11px;
 }
-.jsontree_show-more {
+.json-tree_show-more {
   cursor: pointer;
   color: var(--jtree-keyword);
 }
-.jsontree_node_expanded
-  > .jsontree_value-wrapper
-  > .jsontree_value
-  > .jsontree_show-more {
+.json-tree_node_expanded
+  > .json-tree_value-wrapper
+  > .json-tree_value
+  > .json-tree_show-more {
   display: none;
 }
-.jsontree_node_empty
-  > .jsontree_label-wrapper
-  > .jsontree_label
-  > .jsontree_expand-button,
-.jsontree_node_empty
-  > .jsontree_value-wrapper
-  > .jsontree_value
-  > .jsontree_show-more {
+.json-tree_node_empty
+  > .json-tree_label-wrapper
+  > .json-tree_label
+  > .json-tree_expand-button,
+.json-tree_node_empty
+  > .json-tree_value-wrapper
+  > .json-tree_value
+  > .json-tree_show-more {
   display: none !important;
 }
-.jsontree_node_complex > .jsontree_label-wrapper > .jsontree_label {
+.json-tree_node_complex > .json-tree_label-wrapper > .json-tree_label {
   cursor: pointer;
 }
-.jsontree_node_empty > .jsontree_label-wrapper > .jsontree_label {
+.json-tree_node_empty > .json-tree_label-wrapper > .json-tree_label {
   cursor: default !important;
 }

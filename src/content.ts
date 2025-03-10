@@ -1,11 +1,11 @@
-import type { View } from "./extension/types";
-import type { TreeNode } from "./jsontree/types";
+import type { View } from "./json_explorer/types";
+import type { TreeNode } from "./json_tree/types";
 
-import { allViews, initialView } from "./extension/constants";
-import { createMenu } from "./extension/menu";
-import { createEl, emptyChildren, getNextItem } from "./extension/utils";
-import { createViewport } from "./extension/viewport";
-import { createTree, Tree } from "./jsontree/tree";
+import { allViews, initialView } from "./json_explorer/constants";
+import { createMenu } from "./json_explorer/menu";
+import { createEl, emptyChildren, getNextItem } from "./json_explorer/utils";
+import { createViewport } from "./json_explorer/viewport";
+import { createTree, Tree } from "./json_tree/tree";
 
 const activeTheme = "dracula";
 
@@ -20,13 +20,11 @@ let tree: Tree;
 init();
 
 function getPreviewElement(): HTMLElement | null {
-  return document.querySelector(".jsontree_view[data-view='preview']");
+  return document.querySelector(".json-explorer_view[data-view='preview']");
 }
 
 function init(): void {
-  console.log("Initializing JSONTree...");
   const data = parseJSON();
-  console.log("Parsed data:", data);
   if (!data) {
     return;
   }
@@ -44,11 +42,11 @@ function init(): void {
 
 function render(data: any, target: HTMLElement = document.body): void {
   emptyChildren(target);
-  target.classList.add("jsontree_bg");
+  target.classList.add("json-tree_bg");
   target.setAttribute("data-theme", activeTheme);
 
   createEl("div", {
-    class: "jsontree_wrapper",
+    class: "json-explorer_wrapper",
     children: [
       createMenu({ collapseAll, expandAll, toggleView }),
       createViewport(),
@@ -69,9 +67,9 @@ function collapseAll(): void {
 
 function toggleView(e: MouseEvent): void {
   const activeView = document.querySelector(
-    ".jsontree_view-active"
+    ".json-explorer_view-active"
   ) as HTMLElement;
-  const views = document.querySelectorAll<HTMLElement>(".jsontree_view");
+  const views = document.querySelectorAll<HTMLElement>(".json-explorer_view");
   const toggleViewBtn = e.target as HTMLButtonElement;
 
   const currentView = activeView?.dataset.view ?? initialView;
@@ -84,17 +82,17 @@ function toggleView(e: MouseEvent): void {
   toggleViewBtn.textContent = viewStates[nextView];
 
   views.forEach((view) => {
-    view.classList.remove("jsontree_view-active");
+    view.classList.remove("json-explorer_view-active");
 
     if (view.dataset.view === nextView) {
-      view.classList.add("jsontree_view-active");
+      view.classList.add("json-explorer_view-active");
     }
   });
 }
 
 function lazyLoadSource(): void {
   const source = document.querySelector(
-    ".jsontree_view[data-view='source']"
+    ".json-explorer_view[data-view='source']"
   ) as HTMLElement;
   if (source.dataset.loaded === "true") {
     return;

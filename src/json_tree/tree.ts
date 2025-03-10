@@ -9,7 +9,7 @@ class Tree {
 
   constructor(jsonObj: JSONValue, domEl: HTMLElement) {
     this.wrapper = document.createElement("ul");
-    this.wrapper.className = "jsontree_tree clearfix";
+    this.wrapper.className = "json-tree_tree clearfix";
 
     this.rootNode = null;
     this.sourceJSONObj = jsonObj;

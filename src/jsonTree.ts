@@ -1,3 +1,3 @@
-import { createTree } from "./jsontree/tree";
+import { createTree } from "./json_tree/tree";
 
 export default { create: createTree };

@@ -36,11 +36,11 @@ class NodeSimple implements TreeNode {
     this.isComplex = false;
 
     const el = document.createElement("li");
-    el.classList.add("jsontree_node");
+    el.classList.add("json-tree_node");
     el.innerHTML = this.template(label, val, isLast);
     this.el = el;
 
-    const labelEl = el.querySelector(".jsontree_label");
+    const labelEl = el.querySelector(".json-tree_label");
     labelEl?.addEventListener(
       "click",
       (e: MouseEvent) => {
@@ -60,28 +60,28 @@ class NodeSimple implements TreeNode {
   }
 
   template(label: string, val: JSONValue, isLast: boolean) {
-    const comma = !isLast ? `<span class="jsontree_symbol">,</span>` : "";
+    const comma = !isLast ? `<span class="json-tree_symbol">,</span>` : "";
     return `
-      <span class="jsontree_label-wrapper">
-        <span class="jsontree_label">"${label}"</span>
-        <span class="jsontree_symbol">:</span>
+      <span class="json-tree_label-wrapper">
+        <span class="json-tree_label">"${label}"</span>
+        <span class="json-tree_symbol">:</span>
       </span>
-      <span class="jsontree_value-wrapper">
-        <span class="jsontree_value jsontree_value_${this.type}">
+      <span class="json-tree_value-wrapper">
+        <span class="json-tree_value json-tree_value_${this.type}">
         ${val}</span>${comma}
       </span>`;
   }
 
   mark() {
-    this.el.classList.add("jsontree_node_marked");
+    this.el.classList.add("json-tree_node_marked");
   }
 
   unmark() {
-    this.el.classList.remove("jsontree_node_marked");
+    this.el.classList.remove("json-tree_node_marked");
   }
 
   toggleMarked() {
-    this.el.classList.toggle("jsontree_node_marked");
+    this.el.classList.toggle("json-tree_node_marked");
   }
 
   expandParent(isRecursive: boolean) {
@@ -156,18 +156,18 @@ class NodeComplex extends NodeSimple {
     this.sym = sym;
 
     const li = document.createElement("li");
-    li.classList.add("jsontree_node", "jsontree_node_complex");
+    li.classList.add("json-tree_node", "json-tree_node_complex");
     li.innerHTML = this.template(label, this.sym, isLast);
     this.el = li;
 
     const childNodesUl = li.querySelector(
-      ".jsontree_child-nodes"
+      ".json-tree_child-nodes"
     ) as HTMLElement;
     this.childNodesUl = childNodesUl;
 
     if (label !== null) {
-      const labelEl = li.querySelector(".jsontree_label");
-      const moreContentEl = li.querySelector(".jsontree_show-more");
+      const labelEl = li.querySelector(".json-tree_label");
+      const moreContentEl = li.querySelector(".json-tree_show-more");
 
       labelEl?.addEventListener(
         "click",
@@ -200,7 +200,7 @@ class NodeComplex extends NodeSimple {
     } else {
       this.isRoot = true;
       this.parent = null;
-      li.classList.add("jsontree_node_expanded");
+      li.classList.add("json-tree_node_expanded");
     }
 
     this.childNodes = [];
@@ -210,29 +210,29 @@ class NodeComplex extends NodeSimple {
 
     this.isEmpty = !Boolean(this.childNodes.length);
     if (this.isEmpty) {
-      li.classList.add("jsontree_node_empty");
+      li.classList.add("json-tree_node_empty");
     }
   }
 
   template(label: string | null, sym: [string, string], isLast: boolean) {
-    const comma = !isLast ? `<span class="jsontree_symbol">,</span>` : "";
+    const comma = !isLast ? `<span class="json-tree_symbol">,</span>` : "";
     let str = `
-      <div class="jsontree_value-wrapper">
-        <div class="jsontree_value jsontree_value_${this.type}">
-          <span class="jsontree_symbol">${sym[0]}</span>
-          <span class="jsontree_show-more">&hellip;</span>
-          <ul class="jsontree_child-nodes"></ul>
-          <span class="jsontree_symbol">${sym[1]}</span>${comma}
+      <div class="json-tree_value-wrapper">
+        <div class="json-tree_value json-tree_value_${this.type}">
+          <span class="json-tree_symbol">${sym[0]}</span>
+          <span class="json-tree_show-more">&hellip;</span>
+          <ul class="json-tree_child-nodes"></ul>
+          <span class="json-tree_symbol">${sym[1]}</span>${comma}
         </div>
       </div>`;
     if (label !== null) {
       str = `
-        <span class="jsontree_label-wrapper">
-          <span class="jsontree_label">
-            <span class="jsontree_expand-button"></span>
+        <span class="json-tree_label-wrapper">
+          <span class="json-tree_label">
+            <span class="json-tree_expand-button"></span>
             "${label}"
           </span>
-          <span class="jsontree_symbol">:</span>
+          <span class="json-tree_symbol">:</span>
         </span>${str}`;
     }
     return str;
@@ -250,7 +250,7 @@ class NodeComplex extends NodeSimple {
     }
 
     if (!this.isRoot) {
-      this.el.classList.add("jsontree_node_expanded");
+      this.el.classList.add("json-tree_node_expanded");
     }
 
     if (isRecursive) {
@@ -268,7 +268,7 @@ class NodeComplex extends NodeSimple {
     }
 
     if (!this.isRoot) {
-      this.el.classList.remove("jsontree_node_expanded");
+      this.el.classList.remove("json-tree_node_expanded");
     }
 
     if (isRecursive) {
@@ -285,10 +285,10 @@ class NodeComplex extends NodeSimple {
       return;
     }
 
-    this.el.classList.toggle("jsontree_node_expanded");
+    this.el.classList.toggle("json-tree_node_expanded");
 
     if (isRecursive) {
-      const isExpanded = this.el.classList.contains("jsontree_node_expanded");
+      const isExpanded = this.el.classList.contains("json-tree_node_expanded");
 
       this.childNodes.forEach((item: TreeNode) => {
         if (item.isComplex) {

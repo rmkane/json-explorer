@@ -9,38 +9,12 @@
 @import "themes/obsidian.css";
 @import "themes/unikitty-dark.css";
 
-:root {
-  --menu-border: #666;
-  --source-color: #fff;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --menu-border: #bbb;
-    --source-color: #000;
-  }
-}
-
-.json-explorer_wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.json-explorer_menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  background-color: var(--background-color);
-  border-bottom: 1px solid var(--menu-border);
-}
-
-.json-explorer_menu-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
+.json-explorer {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
 }
 
 .json-explorer_viewport {
@@ -68,6 +42,8 @@
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
     Menlo, Monaco, Consolas, monospace;
   font-size: 0.8rem;
+  background: var(--background-color);
+  width: 100%;
 }
 
 .json-explorer_view.json-explorer_view-active {

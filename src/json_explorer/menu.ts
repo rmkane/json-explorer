@@ -1,36 +1,76 @@
 import { createEl } from "./utils";
 
+type EventHandler = (evt: Event) => void;
+
 type MenuOptions = {
-  collapseAll: (evt: Event) => void;
-  expandAll: (evt: Event) => void;
-  toggleView: (evt: Event) => void;
+  collapseAll: EventHandler;
+  expandAll: EventHandler;
+  toggleView: EventHandler;
+  themeToggle: EventHandler;
 };
 
 function createMenu({
   collapseAll,
   expandAll,
   toggleView,
+  themeToggle,
 }: MenuOptions): HTMLElement {
-  return createEl("div", {
-    class: "json-explorer_menu",
+  return createEl("nav", {
+    class: "json-explorer-menu",
     children: [
-      createEl("button", {
-        class: "json-explorer_menu-btn btn btn-primary",
-        data: { action: "expand" },
-        text: "Expand All",
-        handlers: { click: expandAll },
+      createEl("ul", {
+        children: [
+          createEl("li", {
+            children: [
+              createEl("button", {
+                data: { action: "expand" },
+                text: "Expand All",
+                handlers: { click: expandAll },
+              }),
+            ],
+          }),
+          createEl("li", {
+            children: [
+              createEl("button", {
+                data: { action: "collapse" },
+                text: "Collapse All",
+                handlers: { click: collapseAll },
+              }),
+            ],
+          }),
+          createEl("li", {
+            children: [
+              createEl("button", {
+                data: { action: "toggleView" },
+                text: "Toggle View",
+                handlers: { click: toggleView },
+              }),
+            ],
+          }),
+        ],
       }),
-      createEl("button", {
-        class: "json-explorer_menu-btn btn btn-primary",
-        data: { action: "collapse" },
-        text: "Collapse All",
-        handlers: { click: collapseAll },
+      createThemeToggle(themeToggle),
+    ],
+  });
+}
+
+function createThemeToggle(themeToggle: EventHandler): HTMLElement {
+  return createEl("label", {
+    class: "json-explorer-switch",
+    children: [
+      createEl("input", {
+        props: {
+          type: "checkbox",
+          role: "switch",
+          "aria-checked": "false",
+          "aria-label": "Toggle dark mode",
+        },
+        handlers: {
+          change: themeToggle,
+        },
       }),
-      createEl("button", {
-        class: "json-explorer_menu-btn btn btn-primary",
-        data: { action: "toggle" },
-        text: "Show Source",
-        handlers: { click: toggleView },
+      createEl("span", {
+        class: "json-explorer-slider",
       }),
     ],
   });

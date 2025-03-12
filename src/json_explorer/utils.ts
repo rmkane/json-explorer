@@ -1,6 +1,7 @@
 interface CreateElOptions {
   children?: HTMLElement[];
   class?: string;
+  props?: Record<string, any>;
   data?: Record<string, any>;
   handlers?: Record<string, EventListener>;
   parent?: HTMLElement;
@@ -9,11 +10,25 @@ interface CreateElOptions {
 
 function createEl(
   tagName: string,
-  { children, class: className, data, handlers, parent, text }: CreateElOptions
+  {
+    children,
+    class: className,
+    props,
+    data,
+    handlers,
+    parent,
+    text,
+  }: CreateElOptions
 ): HTMLElement {
   const element = document.createElement(tagName);
   if (className) {
     element.classList.add(...className.split(/\s+/));
+  }
+  if (props) {
+    for (let key in props) {
+      element[key] = props[key];
+      element.setAttribute(key, props[key]);
+    }
   }
   if (data) {
     for (let key in data) {

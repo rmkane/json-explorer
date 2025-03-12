@@ -6,10 +6,7 @@ import { createMenu } from "./json_explorer/menu";
 import { createEl, emptyChildren, getNextItem } from "./json_explorer/utils";
 import { createViewport } from "./json_explorer/viewport";
 import { createTree, Tree } from "./json_tree/tree";
-
-const THEME_KEY = "json-extension-theme";
-const THEME_DARK = "dark";
-const THEME_LIGHT = "light";
+import { loadTheme, themeToggle } from "./theme";
 
 const HIGHLIGHT_KEY = "json-tree-highlight";
 const DEFAULT_HIGHLIGHT = "dracula";
@@ -38,7 +35,7 @@ function getPreviewElement(): HTMLElement | null {
   return document.querySelector(".json-explorer_view[data-view='preview']");
 }
 
-function init(): void {
+async function init(): Promise<void> {
   const data = parseJSON();
   if (!data) {
     return;
@@ -46,7 +43,7 @@ function init(): void {
 
   document.body.classList.add("json-explorer");
 
-  render(data);
+  await render(data);
 
   tree.findAndHandle(
     (node: TreeNode) => node.type === "string",
@@ -57,7 +54,10 @@ function init(): void {
   );
 }
 
-function render(data: any, target: HTMLElement = document.body): void {
+async function render(
+  data: any,
+  target: HTMLElement = document.body
+): Promise<void> {
   emptyChildren(target);
   target.classList.add("json-tree_bg");
 
@@ -72,7 +72,8 @@ function render(data: any, target: HTMLElement = document.body): void {
 
   tree = createTree(data, getPreviewElement());
 
-  setTheme(prefersDark() ? THEME_DARK : THEME_LIGHT);
+  await loadTheme();
+
   setHighlight(getHighlight());
 }
 
@@ -132,42 +133,10 @@ function parseJSON(): any {
   return null;
 }
 
-// Theme toggle
-
-function themeToggle(e: MouseEvent): void {
-  const toggle = e.target as HTMLInputElement;
-  const isDark = toggle.checked;
-  setTheme(isDark ? THEME_DARK : THEME_LIGHT, true);
-}
-
-function isDarkMode(theme: string): boolean {
-  return theme === THEME_DARK;
-}
-
-function prefersDark() {
-  const savedTheme = localStorage.getItem(THEME_KEY);
-  if (savedTheme !== null) {
-    return isDarkMode(savedTheme);
-  }
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
-}
-
-function setTheme(theme: string, save: boolean = false): void {
-  const toggle = document.querySelector<HTMLInputElement>(
-    ".json-explorer-switch input[type='checkbox']"
-  );
-  console.log(toggle);
-  if (save) {
-    localStorage.setItem(THEME_KEY, theme);
-  }
-  const isDark = isDarkMode(theme);
-  toggle.checked = isDark;
-  toggle.setAttribute("aria-checked", String(isDark));
-  document.documentElement.dataset.theme = theme;
-}
-
 // Highlight
+// TODO: Make this async
 
+// Get the saved syntax highlighting theme
 function getHighlight(): string {
   const savedHighlight = localStorage.getItem(HIGHLIGHT_KEY);
   if (savedHighlight) {
@@ -176,6 +145,7 @@ function getHighlight(): string {
   return DEFAULT_HIGHLIGHT;
 }
 
+// Set the syntax highlighting theme on the body
 function setHighlight(highlight: string): void {
   document.body.dataset.highlight = highlight;
 }

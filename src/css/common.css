@@ -43,18 +43,19 @@
     padding: 0;
     margin: 0;
   }
+}
 
-  button {
-    background: none;
-    border: thin solid var(--btn-border);
-    color: var(--menu-text);
-    font-size: 16px;
-    cursor: pointer;
-    padding: 0.33rem 0.67rem;
+.btn,
+.json-explorer-menu button {
+  background: none;
+  border: thin solid var(--btn-border);
+  color: var(--menu-text);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0.33rem 0.67rem;
 
-    &:hover {
-      background: var(--btn-hover);
-    }
+  &:hover {
+    background: var(--btn-hover);
   }
 }
 

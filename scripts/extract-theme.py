@@ -105,7 +105,7 @@ def extract_theme_variables(css_content):
 
 
 def generate_css(theme_name, theme_variables):
-    css_lines = [f'[data-theme="{theme_name}"] {{']
+    css_lines = [f'[data-highlight="{theme_name}"] {{']
     for var, value in theme_variables.items():
         css_lines.append(f"  {var}: {value};")
     css_lines.append("}")

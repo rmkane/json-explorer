@@ -64,7 +64,19 @@ async function render(
   createEl("div", {
     class: "json-explorer_wrapper",
     children: [
-      createMenu({ collapseAll, expandAll, toggleView, themeToggle }),
+      createMenu({
+        handlers: {
+          clearMarks,
+          collapseAll,
+          expandAll,
+          toggleView,
+        },
+        highlightSelect: {
+          options: HIGHLIGHT_OPTIONS,
+          value: DEFAULT_HIGHLIGHT,
+        },
+        themeToggle,
+      }),
       createViewport(),
     ],
     parent: target,
@@ -83,6 +95,10 @@ function expandAll(): void {
 
 function collapseAll(): void {
   tree.collapse();
+}
+
+function clearMarks(): void {
+  tree.unmarkAll();
 }
 
 function toggleView(e: MouseEvent): void {
